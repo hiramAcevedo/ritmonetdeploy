@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "title": "Guitarra Eléctrica",
+      "instrument": "guitarra",
+      "instructor": "Carlos Santana",
+      "duration": "8 semanas",
+      "level": "Intermedio",
+      "description": "Domina la guitarra eléctrica con técnicas avanzadas y estilos modernos.",
+      "image": "https://images.pexels.com/photos/165971/pexels-photo-165971.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Guitarra Clásica",
+      "instrument": "guitarra",
+      "instructor": "Andrés Segovia",
+      "duration": "12 semanas",
+      "level": "Avanzado",
+      "description": "Aprende los fundamentos y técnicas de la guitarra clásica.",
+      "image": "https://images.pexels.com/photos/164697/pexels-photo-164697.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Guitarra Popular",
+      "instrument": "guitarra",
+      "instructor": "Juan Pérez",
+      "duration": "6 semanas",
+      "level": "Principiante",
+      "description": "Iníciate en la guitarra popular y aprende tus canciones favoritas.",
+      "image": "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Introducción al Piano",
+      "instrument": "piano",
+      "instructor": "María González",
+      "duration": "8 semanas",
+      "level": "Principiante",
+      "description": "Aprende los conceptos básicos del piano y comienza a tocar melodías sencillas.",
+      "image": "https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Piano Intermedio",
+      "instrument": "piano",
+      "instructor": "Luis Hernández",
+      "duration": "10 semanas",
+      "level": "Intermedio",
+      "description": "Mejora tus habilidades pianísticas y domina piezas más complejas.",
+      "image": "https://images.pexels.com/photos/2378209/pexels-photo-2378209.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Piano Avanzado",
+      "instrument": "piano",
+      "instructor": "Ana López",
+      "duration": "12 semanas",
+      "level": "Avanzado",
+      "description": "Perfecciona tu técnica y prepárate para conciertos profesionales.",
+      "image": "https://images.pexels.com/photos/1293551/pexels-photo-1293551.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Percusiones",
+      "instrument": "bateria",
+      "instructor": "Miguel Ángel",
+      "duration": "6 semanas",
+      "level": "Principiante",
+      "description": "Introducción a las percusiones y ritmos básicos.",
+      "image": "https://images.pexels.com/photos/65717/pexels-photo-65717.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Introducción a la Batería",
+      "instrument": "bateria",
+      "instructor": "Roberto Martínez",
+      "duration": "8 semanas",
+      "level": "Principiante",
+      "description": "Aprende a tocar la batería desde cero.",
+      "image": "https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg"
+    },
+    {
+      "id": 9,
+      "title": "Batería Avanzada",
+      "instrument": "bateria",
+      "instructor": "Fernando Díaz",
+      "duration": "10 semanas",
+      "level": "Avanzado",
+      "description": "Domina técnicas avanzadas y estilos complejos en la batería.",
+      "image": "https://images.pexels.com/photos/164967/pexels-photo-164967.jpeg"
+    },
+    {
+      "id": 10,
+      "title": "Introducción al Canto",
+      "instrument": "tecnica-vocal",
+      "instructor": "Sofía Ruiz",
+      "duration": "6 semanas",
+      "level": "Principiante",
+      "description": "Descubre tu voz y aprende técnicas básicas de canto.",
+      "image": "https://images.pexels.com/photos/7086299/pexels-photo-7086299.jpeg"
+    },
+    {
+      "id": 11,
+      "title": "Bel Canto",
+      "instrument": "tecnica-vocal",
+      "instructor": "Valentina Moreno",
+      "duration": "12 semanas",
+      "level": "Intermedio",
+      "description": "Perfecciona tu técnica vocal con el estilo del bel canto.",
+      "image": "https://images.pexels.com/photos/7567423/pexels-photo-7567423.jpeg"
+    },
+    {
+      "id": 12,
+      "title": "Canto Popular",
+      "instrument": "tecnica-vocal",
+      "instructor": "Daniela Fernández",
+      "duration": "8 semanas",
+      "level": "Intermedio",
+      "description": "Aprende a interpretar canciones populares y mejorar tu presencia escénica.",
+      "image": "https://images.pexels.com/photos/5648357/pexels-photo-5648357.jpeg"
+    }
+  ]  

@@ -3,8 +3,10 @@
 import { Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import NavBar from './components/NavBar.jsx';
+import Footer from './components/Footer.jsx';
 import HomePage from './components/HomePage.jsx';
 import Subscription from './components/Subscription.jsx';
+import CoursesHome from './components/CoursesHome.jsx'; // Importamos el nuevo componente
 import CoursesPage from './components/CoursesPage.jsx';
 import CourseDetails from './components/CourseDetails.jsx';
 import Teachers from './components/Teachers.jsx';
@@ -27,24 +29,36 @@ function App() {
 
   return (
     <div className={`${darkMode ? 'dark' : ''}`}>
-      <div className="min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+      <div className="min-h-screen flex flex-col bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
         <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/subscription" element={<Subscription />} />
-          <Route path="/courses/:instrument" element={<CoursesPage />} />
-          <Route path="/course-details" element={<CourseDetails />} />
-          <Route path="/teachers" element={<Teachers />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/login" element={<LoginRegister />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/acquired-courses" element={<AcquiredCourses />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/confirmation" element={<Confirmation />} />
-          <Route path="/subscription-confirmation" element={<SubscriptionConfirmation />} />
-          <Route path="/subscribed-course" element={<SubscribedCourseDetails />} />
-          <Route path="/teachers/:id" element={<TeacherDetails />} />
-        </Routes>
+        {/* Contenedor principal que crecerá para ocupar el espacio disponible */}
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/subscription" element={<Subscription />} />
+            <Route path="/courses" element={<CoursesHome />} />
+            <Route path="/courses/:instrument" element={<CoursesPage />} />
+            <Route path="/courses/:instrument/:courseId" element={<CourseDetails />} />
+            <Route path="/teachers" element={<Teachers />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/login" element={<LoginRegister />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/acquired-courses" element={<AcquiredCourses />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/confirmation" element={<Confirmation />} />
+            <Route
+              path="/subscription-confirmation"
+              element={<SubscriptionConfirmation />}
+            />
+            <Route
+              path="/subscribed-course"
+              element={<SubscribedCourseDetails />}
+            />
+            <Route path="/teachers/:id" element={<TeacherDetails />} />
+          </Routes>
+        </div>
+        {/* Agregamos el Footer aquí */}
+        <Footer />
       </div>
     </div>
   );
