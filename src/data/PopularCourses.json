@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "title": "Guitarra Eléctrica",
+      "instrument": "guitarra",
+      "instructor": "Carlos Santana",
+      "duration": "8 semanas",
+      "level": "Intermedio",
+      "image": "https://images.pexels.com/photos/165971/pexels-photo-165971.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Introducción al Piano",
+      "instrument": "piano",
+      "instructor": "María González",
+      "duration": "8 semanas",
+      "level": "Principiante",
+      "image": "https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Percusiones",
+      "instrument": "bateria",
+      "instructor": "Miguel Ángel",
+      "duration": "6 semanas",
+      "level": "Principiante",
+      "image": "https://images.pexels.com/photos/65717/pexels-photo-65717.jpeg"
+    },
+    {
+      "id": 11,
+      "title": "Bel Canto",
+      "instrument": "tecnica-vocal",
+      "instructor": "Valentina Moreno",
+      "duration": "12 semanas",
+      "level": "Intermedio",
+      "image": "https://images.pexels.com/photos/4154677/pexels-photo-4154677.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Guitarra Clásica",
+      "instrument": "guitarra",
+      "instructor": "Andrés Segovia",
+      "duration": "12 semanas",
+      "level": "Avanzado",
+      "image": "https://images.pexels.com/photos/164697/pexels-photo-164697.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Piano Avanzado",
+      "instrument": "piano",
+      "instructor": "Ana López",
+      "duration": "12 semanas",
+      "level": "Avanzado",
+      "image": "https://images.pexels.com/photos/1293551/pexels-photo-1293551.jpeg"
+    }
+  ]  
