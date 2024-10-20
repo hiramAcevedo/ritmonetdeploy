@@ -1,21 +1,22 @@
 // src/components/CourseDetails.jsx
 
-import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import courses from '../data/CoursesData.json';
 
 const CourseDetails = () => {
-  const navigate = useNavigate();
+  const { instrument, courseId } = useParams();
 
-  const course = {
-    title: "Master the Guitar",
-    instructor: "John Doe",
-    duration: "8 weeks",
-    level: "Beginner",
-    description: "Learn the basics of guitar playing...",
-    image: "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg",
-  };
+  // Buscar el curso correspondiente
+  const course = courses.find(
+    (c) => c.id === parseInt(courseId) && c.instrument.toLowerCase() === instrument.toLowerCase()
+  );
+
+  if (!course) {
+    return <div>Curso no encontrado</div>;
+  }
 
   const handleAddToCart = () => {
-    navigate('/cart');
+    // Implementa la lógica para agregar al carrito
   };
 
   return (
@@ -29,14 +30,14 @@ const CourseDetails = () => {
         <div className="md:ml-8 mt-4 md:mt-0">
           <h1 className="text-3xl font-bold mb-4">{course.title}</h1>
           <p className="text-sm mb-2">Instructor: {course.instructor}</p>
-          <p className="text-sm mb-2">Duration: {course.duration}</p>
-          <p className="text-sm mb-2">Level: {course.level}</p>
+          <p className="text-sm mb-2">Duración: {course.duration}</p>
+          <p className="text-sm mb-2">Nivel: {course.level}</p>
           <p className="text-base mb-4">{course.description}</p>
           <button
             onClick={handleAddToCart}
             className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition duration-300 text-white font-bold py-2 px-4 rounded"
           >
-            Add to Cart
+            Agregar al Carrito
           </button>
         </div>
       </div>

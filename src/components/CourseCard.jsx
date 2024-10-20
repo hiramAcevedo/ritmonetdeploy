@@ -13,13 +13,13 @@ const CourseCard = ({ course }) => {
       <div className="p-4">
         <h3 className="font-bold text-lg mb-2">{course.title}</h3>
         <p className="text-sm mb-2">Instructor: {course.instructor}</p>
-        <p className="text-sm mb-2">Duration: {course.duration}</p>
-        <p className="text-sm mb-4">Level: {course.level}</p>
+        <p className="text-sm mb-2">Duración: {course.duration}</p>
+        <p className="text-sm mb-4">Nivel: {course.level}</p>
         <Link
-          to="/course-details"
+          to={`/courses/${course.instrument.toLowerCase()}/${course.id}`}
           className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition duration-300 w-full text-white font-bold py-2 px-4 rounded block text-center"
         >
-          View Course
+          Ver Curso
         </Link>
       </div>
     </div>

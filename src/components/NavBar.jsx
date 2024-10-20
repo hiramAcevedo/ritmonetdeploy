@@ -28,10 +28,10 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
   }, []);
 
   const courses = [
-    { name: 'Guitarra', path: '/course-details' },
-    { name: 'Piano', path: '/course-details' },
-    { name: 'Batería', path: '/course-details' },
-    { name: 'Técnica Vocal', path: '/course-details' },
+    { name: 'Guitarra', path: '/courses/guitarra' },
+    { name: 'Piano', path: '/courses/piano' },
+    { name: 'Batería', path: '/courses/bateria' },
+    { name: 'Técnica Vocal', path: '/courses/tecnica-vocal' },
   ];
 
   return (
@@ -39,7 +39,7 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Izquierda: Logo y Barra de Búsqueda */}
         <div className="flex items-center space-x-4">
-          <Link to="/" className="text-2xl font-bold">
+          <Link to="/" className="text-3xl font-bold">
             Ritmonet
           </Link>
           <input
@@ -55,15 +55,17 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
             Clases
           </Link>
 
-          <div className="relative" ref={coursesRef}>
-            <button
-              onClick={() => setIsCoursesOpen(!isCoursesOpen)}
-              className="hover:underline focus:outline-none"
-            >
+          <div
+            className="relative"
+            ref={coursesRef}
+            onMouseEnter={() => setIsCoursesOpen(true)}
+            onMouseLeave={() => setIsCoursesOpen(false)}
+          >
+            <Link to="/courses" className="hover:underline focus:outline-none">
               Cursos
-            </button>
+            </Link>
             {isCoursesOpen && (
-              <div className="absolute top-full left-0 mt-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
+              <div className="absolute left-0 top-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
                 <ul>
                   {courses.map((course, index) => (
                     <li
@@ -93,17 +95,19 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
             Iniciar Sesión / Registrarse
           </Link>
 
-          <div className="relative" ref={accountRef}>
-            <button
-              onClick={() => setIsAccountMenuOpen(!isAccountMenuOpen)}
-              className="focus:outline-none"
-            >
+          <div
+            className="relative"
+            ref={accountRef}
+            onMouseEnter={() => setIsAccountMenuOpen(true)}
+            onMouseLeave={() => setIsAccountMenuOpen(false)}
+          >
+            <button className="focus:outline-none">
               <span role="img" aria-label="User">
                 👤
               </span>
             </button>
             {isAccountMenuOpen && (
-              <div className="absolute top-full right-0 mt-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
+              <div className="absolute right-0 top-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
                 <ul>
                   <li className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
                     <Link to="/profile">Perfil de Usuario</Link>
