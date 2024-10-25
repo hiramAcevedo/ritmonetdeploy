@@ -6,7 +6,7 @@ import NavBar from './components/NavBar.jsx';
 import Footer from './components/Footer.jsx';
 import HomePage from './components/HomePage.jsx';
 import Subscription from './components/Subscription.jsx';
-import CoursesHome from './components/CoursesHome.jsx'; // Importamos el nuevo componente
+import CoursesHome from './components/CoursesHome.jsx';
 import CoursesPage from './components/CoursesPage.jsx';
 import CourseDetails from './components/CourseDetails.jsx';
 import Teachers from './components/Teachers.jsx';
@@ -19,6 +19,7 @@ import Confirmation from './components/Confirmation.jsx';
 import SubscriptionConfirmation from './components/SubscriptionConfirmation.jsx';
 import SubscribedCourseDetails from './components/SubscribedCourseDetails.jsx';
 import TeacherDetails from './components/TeacherDetails.jsx';
+import Contact from './components/Contact.jsx'; // Importamos el nuevo componente
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,7 +32,7 @@ function App() {
     <div className={`${darkMode ? 'dark' : ''}`}>
       <div className="min-h-screen flex flex-col bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
         <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        {/* Contenedor principal que crecerá para ocupar el espacio disponible */}
+        {/* Contenido Principal */}
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -55,9 +56,10 @@ function App() {
               element={<SubscribedCourseDetails />}
             />
             <Route path="/teachers/:id" element={<TeacherDetails />} />
+            <Route path="/contact" element={<Contact />} /> {/* Nueva ruta */}
           </Routes>
         </div>
-        {/* Agregamos el Footer aquí */}
+        {/* Footer */}
         <Footer />
       </div>
     </div>
