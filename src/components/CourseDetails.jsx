@@ -33,12 +33,14 @@ const CourseDetails = () => {
           <p className="text-sm mb-2">Duración: {course.duration}</p>
           <p className="text-sm mb-2">Nivel: {course.level}</p>
           <p className="text-base mb-4">{course.description}</p>
+          <p className="text-base mb-4">{course.programa}</p>
           <button
             onClick={handleAddToCart}
             className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition duration-300 text-white font-bold py-2 px-4 rounded"
           >
             Agregar al Carrito
           </button>
+            
         </div>
       </div>
     </div>
