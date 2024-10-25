@@ -7,13 +7,14 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
   const [isAccountMenuOpen, setIsAccountMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileCoursesOpen, setIsMobileCoursesOpen] = useState(false);
+  const [isMobileAccountMenuOpen, setIsMobileAccountMenuOpen] = useState(false);
 
-  // Refs para detectar clics fuera de los menús
+  // Refs para detectar clics fuera de los menús de escritorio
   const coursesRef = useRef(null);
   const accountRef = useRef(null);
-  const mobileMenuRef = useRef(null);
 
-  // Función para cerrar menús al hacer clic fuera
+  // Función para cerrar menús de escritorio al hacer clic fuera
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (coursesRef.current && !coursesRef.current.contains(event.target)) {
@@ -21,9 +22,6 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
       }
       if (accountRef.current && !accountRef.current.contains(event.target)) {
         setIsAccountMenuOpen(false);
-      }
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
-        setIsMobileMenuOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -100,9 +98,9 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
             onMouseEnter={() => setIsCoursesOpen(true)}
             onMouseLeave={() => setIsCoursesOpen(false)}
           >
-            <button className="hover:underline focus:outline-none">
+            <Link to="/courses" className="hover:underline focus:outline-none">
               Cursos
-            </button>
+            </Link>
             {isCoursesOpen && (
               <div className="absolute left-0 top-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
                 <ul>
@@ -171,10 +169,7 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
 
       {/* Menú Móvil */}
       {isMobileMenuOpen && (
-        <div
-          ref={mobileMenuRef}
-          className="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700"
-        >
+        <div className="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
           <div className="p-4">
             {/* Barra de Búsqueda */}
             <input
@@ -192,28 +187,37 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
             </Link>
 
             <div className="relative">
-              <button
-                onClick={() => setIsCoursesOpen(!isCoursesOpen)}
-                className="w-full text-left py-2 focus:outline-none hover:underline flex justify-between items-center"
-              >
-                <span>Cursos</span>
-                <svg
-                  className={`w-4 h-4 transform ${
-                    isCoursesOpen ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <div className="flex justify-between items-center">
+                <Link
+                  to="/courses"
+                  className="py-2 hover:underline"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-              {isCoursesOpen && (
+                  Cursos
+                </Link>
+                <button
+                  onClick={() => setIsMobileCoursesOpen(!isMobileCoursesOpen)}
+                  className="focus:outline-none"
+                  aria-label="Toggle Courses Submenu"
+                >
+                  <svg
+                    className={`w-4 h-4 transform ${
+                      isMobileCoursesOpen ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+              </div>
+              {isMobileCoursesOpen && (
                 <div className="mt-2 ml-4">
                   <ul>
                     {courses.map((course, index) => (
@@ -221,7 +225,10 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
                         <Link
                           to={course.path}
                           className="block py-2 hover:underline"
-                          onClick={() => setIsMobileMenuOpen(false)}
+                          onClick={() => {
+                            setIsMobileMenuOpen(false);
+                            setIsMobileCoursesOpen(false);
+                          }}
                         >
                           {course.name}
                         </Link>
@@ -258,13 +265,15 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
 
             <div className="relative">
               <button
-                onClick={() => setIsAccountMenuOpen(!isAccountMenuOpen)}
+                onClick={() =>
+                  setIsMobileAccountMenuOpen(!isMobileAccountMenuOpen)
+                }
                 className="w-full text-left py-2 focus:outline-none hover:underline flex justify-between items-center"
               >
                 <span>Cuenta</span>
                 <svg
                   className={`w-4 h-4 transform ${
-                    isAccountMenuOpen ? 'rotate-180' : ''
+                    isMobileAccountMenuOpen ? 'rotate-180' : ''
                   }`}
                   fill="none"
                   stroke="currentColor"
@@ -278,14 +287,17 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
                   />
                 </svg>
               </button>
-              {isAccountMenuOpen && (
+              {isMobileAccountMenuOpen && (
                 <div className="mt-2 ml-4">
                   <ul>
                     <li>
                       <Link
                         to="/profile"
                         className="block py-2 hover:underline"
-                        onClick={() => setIsMobileMenuOpen(false)}
+                        onClick={() => {
+                          setIsMobileMenuOpen(false);
+                          setIsMobileAccountMenuOpen(false);
+                        }}
                       >
                         Perfil de Usuario
                       </Link>
@@ -294,7 +306,10 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
                       <Link
                         to="/acquired-courses"
                         className="block py-2 hover:underline"
-                        onClick={() => setIsMobileMenuOpen(false)}
+                        onClick={() => {
+                          setIsMobileMenuOpen(false);
+                          setIsMobileAccountMenuOpen(false);
+                        }}
                       >
                         Cursos Adquiridos
                       </Link>
