@@ -19,7 +19,10 @@ import Confirmation from './components/Confirmation.jsx';
 import SubscriptionConfirmation from './components/SubscriptionConfirmation.jsx';
 import SubscribedCourseDetails from './components/SubscribedCourseDetails.jsx';
 import TeacherDetails from './components/TeacherDetails.jsx';
-import Contact from './components/Contact.jsx'; // Importamos el nuevo componente
+import Contact from './components/Contact.jsx';
+
+// Importamos el UserProvider
+import { UserProvider } from './context/UserContext.jsx';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -29,40 +32,42 @@ function App() {
   };
 
   return (
-    <div className={`${darkMode ? 'dark' : ''}`}>
-      <div className="min-h-screen flex flex-col bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
-        <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        {/* Contenido Principal */}
-        <div className="flex-grow">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/subscription" element={<Subscription />} />
-            <Route path="/courses" element={<CoursesHome />} />
-            <Route path="/courses/:instrument" element={<CoursesPage />} />
-            <Route path="/courses/:instrument/:courseId" element={<CourseDetails />} />
-            <Route path="/teachers" element={<Teachers />} />
-            <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/login" element={<LoginRegister />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/acquired-courses" element={<AcquiredCourses />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/confirmation" element={<Confirmation />} />
-            <Route
-              path="/subscription-confirmation"
-              element={<SubscriptionConfirmation />}
-            />
-            <Route
-              path="/subscribed-course"
-              element={<SubscribedCourseDetails />}
-            />
-            <Route path="/teachers/:id" element={<TeacherDetails />} />
-            <Route path="/contact" element={<Contact />} /> {/* Nueva ruta */}
-          </Routes>
+    <UserProvider>
+      <div className={`${darkMode ? 'dark' : ''}`}>
+        <div className="min-h-screen flex flex-col bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+          <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          {/* Contenido Principal */}
+          <div className="flex-grow">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/subscription" element={<Subscription />} />
+              <Route path="/courses" element={<CoursesHome />} />
+              <Route path="/courses/:instrument" element={<CoursesPage />} />
+              <Route path="/courses/:instrument/:courseId" element={<CourseDetails />} />
+              <Route path="/teachers" element={<Teachers />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/login" element={<LoginRegister />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/acquired-courses" element={<AcquiredCourses />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/confirmation" element={<Confirmation />} />
+              <Route
+                path="/subscription-confirmation"
+                element={<SubscriptionConfirmation />}
+              />
+              <Route
+                path="/subscribed-course"
+                element={<SubscribedCourseDetails />}
+              />
+              <Route path="/teachers/:id" element={<TeacherDetails />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+          {/* Footer */}
+          <Footer />
         </div>
-        {/* Footer */}
-        <Footer />
       </div>
-    </div>
+    </UserProvider>
   );
 }
 
