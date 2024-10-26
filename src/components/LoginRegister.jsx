@@ -15,12 +15,23 @@ const LoginRegister = () => {
       <h1 className="text-3xl font-bold mb-8">Registro de Usuario</h1>
       <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
         <label htmlFor="nombre" className="block mb-2">
-          Nombre:
+          Nombre Completo:
         </label>
         <input
           type="text"
           id="nombre"
           name="nombre"
+          required
+          className="w-full mb-4 p-2 border rounded"
+        />
+
+        <label htmlFor="username" className="block mb-2">
+          Nombre de Usuario:
+        </label>
+        <input
+          type="text"
+          id="username"
+          name="username"
           required
           className="w-full mb-4 p-2 border rounded"
         />
@@ -32,17 +43,6 @@ const LoginRegister = () => {
           type="email"
           id="email"
           name="email"
-          required
-          className="w-full mb-4 p-2 border rounded"
-        />
-
-        <label htmlFor="direccion" className="block mb-2">
-          Dirección:
-        </label>
-        <input
-          type="text"
-          id="direccion"
-          name="direccion"
           required
           className="w-full mb-4 p-2 border rounded"
         />
