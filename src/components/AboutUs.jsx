@@ -1,62 +1,70 @@
 // src/components/AboutUs.jsx
 
+import React from 'react';
+
 const AboutUs = () => {
   return (
-    <div className="container mx-auto px-4 py-16">
-      <h1 className="text-3xl font-bold mb-8">Nosotros</h1>
-      <p className="mb-4">
-      En Ritmonet el objetivo de nuestro proyecto es crear una plataforma web robusta y escalable dedicada a la enseñanza musical en español con costos accesibles. Esta plataforma no solo aloja un repositorio de cursos para varios instrumentos musicales, sino que también integra herramientas interactivas para teoría musical, entrenamiento auditivo y evaluaciones en línea. El desafío técnico radica en desarrollar una arquitectura web que maneja eficientemente diversos tipos de contenido multimedia, interactividad en tiempo real y un sistema de gestión de aprendizaje personalizado.
-      Somos el futuro de la enseñanza musical. 
-      
-      </p>
-      <p className="mb-4">
-      ¡Atrévete a ritmar con nosotros!
-      </p>
-
-{/* Imagen añadida */}
-<div className="flex justify-center items-center mt-8">
-        <img 
-          src="https://www.nus.agency/wp-content/uploads/elementor/thumbs/musica-arte-scaled-q3s9zjmsgnvmn73optv6vm808qaju2jakn089uojbg.jpg" 
-          alt="Arte musical"
-          className="w-128 h-64"
-        />
-      </div>
-
-
-      <p className="mb-4">
-      Nuestra plataforma innova en la forma en que se enseña música en línea desde un enfoque técnico y pedagógico. Los usuarios podrán navegar por una interfaz diseñada para facilitar el acceso a una amplia gama de recursos educativos. Además, desarrollamos funcionalidades interactivas, como exámenes en línea y ejercicios de teoría musical, todo ello integrado en un sistema que prioriza la usabilidad y la experiencia del usuario.
-      
-      </p>
-
-      <p className="mb-4">
-      ¡Sueña en grande, solfea con ritmonet!
-      </p>
-
-      {/* Imagen añadida */}
-      <div className="flex justify-center items-center mt-8">
-        <img 
-          src="https://holatelcel.com/wp-content/uploads/2023/12/Disen%CC%83o-sin-ti%CC%81tulo-3.png"
-          className="w-128 h-64"
-        />
-      </div>
-
-      <p className="mb-4">
-      Nuestro proyecto no solo pretende democratizar el acceso a la educación musical de calidad, sino también proporcionar una plataforma web accesible y culturalmente adaptada para la comunidad hispanohablante, con la visión de fomentar el desarrollo musical en nuestra región y más allá.
-      </p>
-
-      <p className="mb-4">
-      Aprende a tocar, domina tu pasión.
-      </p>
-
-  {/* Imagen añadida */}
-  <div className="flex justify-center items-center mt-8">
-        <img 
+    <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
+      {/* Hero Section */}
+      <div className="relative">
+        <img
           src="https://www.orquestafilarmonia.com/wp-content/uploads/2023/12/musica-clasica.png"
-          className="w-128 h-64"
+          alt="Música"
+          className="w-full h-96 object-cover"
         />
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-white">Sobre Nosotros</h1>
+        </div>
       </div>
 
-      {/* Añade más contenido según sea necesario */}
+      {/* Content Section */}
+      <div className="container mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold mb-8 text-center">Nuestra Misión</h2>
+        <p className="mb-8 text-lg leading-relaxed text-center">
+          En Ritmonet, nuestro objetivo es crear una plataforma accesible y de alta calidad para la enseñanza musical en español. Ofrecemos cursos completos para diversos instrumentos musicales, integrando herramientas interactivas como teoría musical, entrenamiento auditivo y evaluaciones en línea.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <img
+            src="https://www.nus.agency/wp-content/uploads/elementor/thumbs/musica-arte-scaled-q3s9zjmsgnvmn73optv6vm808qaju2jakn089uojbg.jpg"
+            alt="Enseñanza Musical"
+            className="w-full h-80 object-cover rounded-lg"
+          />
+          <div>
+            <h3 className="text-2xl font-bold mb-4">Innovación en la Enseñanza</h3>
+            <p className="text-lg leading-relaxed">
+              Nuestra plataforma innova en la forma en que se enseña música en línea desde un enfoque técnico y pedagógico. Desarrollamos funcionalidades interactivas, como exámenes en línea y ejercicios de teoría musical, todo integrado en un sistema que prioriza la usabilidad y la experiencia del usuario.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-16">
+          <div>
+            <h3 className="text-2xl font-bold mb-4">Accesibilidad para Todos</h3>
+            <p className="text-lg leading-relaxed">
+              Nuestro proyecto no solo pretende democratizar el acceso a la educación musical de calidad, sino también proporcionar una plataforma web accesible y adaptada culturalmente para la comunidad hispanohablante, con la visión de fomentar el desarrollo musical en nuestra región y más allá.
+            </p>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/2479312/pexels-photo-2479312.jpeg"
+            alt="Accesibilidad"
+            className="w-full h-100 object-cover rounded-lg"
+          />
+        </div>
+
+        <div className="mt-16 text-center">
+          <h3 className="text-2xl font-bold mb-4">Únete a Nosotros</h3>
+          <p className="text-lg leading-relaxed mb-8">
+            Aprende a tocar, domina tu pasión. ¡Atrévete a ritmar con nosotros!
+          </p>
+          <img
+            src="https://holatelcel.com/wp-content/uploads/2023/12/Disen%CC%83o-sin-ti%CC%81tulo-3.png"
+            alt="Únete a Nosotros"
+            className="w-full h-80 object-cover rounded-lg"
+          />
+        </div>
+      </div>
     </div>
   );
 };
