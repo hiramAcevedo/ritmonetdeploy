@@ -21,6 +21,11 @@ import SubscribedCourseDetails from './components/SubscribedCourseDetails.jsx';
 import TeacherDetails from './components/TeacherDetails.jsx';
 import Contact from './components/Contact.jsx';
 
+// Nuevos imports
+import CourseSelection from './components/CourseSelection.jsx';
+import TeacherSelection from './components/TeacherSelection.jsx';
+import SubscriptionSummary from './components/SubscriptionSummary.jsx';
+
 // Importamos el UserProvider
 import { UserProvider } from './context/UserContext.jsx';
 
@@ -41,6 +46,9 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/subscription" element={<Subscription />} />
+              <Route path="/course-selection" element={<CourseSelection />} />
+              <Route path="/teacher-selection" element={<TeacherSelection />} />
+              <Route path="/subscription-summary" element={<SubscriptionSummary />} />
               <Route path="/courses" element={<CoursesHome />} />
               <Route path="/courses/:instrument" element={<CoursesPage />} />
               <Route path="/courses/:instrument/:courseId" element={<CourseDetails />} />

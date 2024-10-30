@@ -1,58 +1,58 @@
 [
-    {
-      "id": 1,
-      "name": "John Smith",
-      "instrument": "Guitar",
-      "experience": "15 years",
-      "image": "https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    },
-    {
-      "id": 2,
-      "name": "Sarah Johnson",
-      "instrument": "Piano",
-      "experience": "20 years",
-      "image": "https://images.pexels.com/photos/7314681/pexels-photo-7314681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    },
-    {
-      "id": 3,
-      "name": "Michael Brown",
-      "instrument": "Drums",
-      "experience": "12 years",
-      "image": "https://images.pexels.com/photos/1493755/pexels-photo-1493755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    },
-    {
-      "id": 4,
-      "name": "Saul Goodman",
-      "instrument": "Piano",
-      "experience": "18 years",
-      "image": "https://images.pexels.com/photos/8128012/pexels-photo-8128012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    },
-    {
-      "id": 5,
-      "name": "David Wilson",
-      "instrument": "Percusiones",
-      "experience": "10 years",
-      "image": "https://images.pexels.com/photos/1703540/pexels-photo-1703540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    },
-    {
-      "id": 6,
-      "name": "Lisa Anderson",
-      "instrument": "Canto",
-      "experience": "14 years",
-      "image": "https://images.pexels.com/photos/4088018/pexels-photo-4088018.jpeg"
-    },
-    {
-      "id": 7,
-      "name": "Roberto Martinez",
-      "instrument": "Bel canto",
-      "experience": "16 years",
-      "image": "https://images.pexels.com/photos/59858/singer-mexicans-sing-man-59858.jpeg?auto=compress&cs=tinysrgb&w=800"
-    },
-    {
-      "id": 8,
-      "name": "Amanda White",
-      "instrument": "Guitarra",
-      "experience": "11 years",
-      "image": "https://images.pexels.com/photos/2118049/pexels-photo-2118049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    }
-  ]  
+  {
+    "id": 1,
+    "name": "John Smith",
+    "instrument": "guitarra",
+    "experience": "15 años",
+    "image": "https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "instrument": "piano",
+    "experience": "20 años",
+    "image": "https://images.pexels.com/photos/7314681/pexels-photo-7314681.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Michael Brown",
+    "instrument": "batería",
+    "experience": "12 años",
+    "image": "https://images.pexels.com/photos/1493755/pexels-photo-1493755.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Saul Goodman",
+    "instrument": "piano",
+    "experience": "18 años",
+    "image": "https://images.pexels.com/photos/8128012/pexels-photo-8128012.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "David Wilson",
+    "instrument": "percusión",
+    "experience": "10 años",
+    "image": "https://images.pexels.com/photos/1703540/pexels-photo-1703540.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Lisa Anderson",
+    "instrument": "técnica vocal",
+    "experience": "14 años",
+    "image": "https://images.pexels.com/photos/4088018/pexels-photo-4088018.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Roberto Martínez",
+    "instrument": "técnica vocal",
+    "experience": "16 años",
+    "image": "https://images.pexels.com/photos/59858/singer-mexicans-sing-man-59858.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Amanda White",
+    "instrument": "guitarra",
+    "experience": "11 años",
+    "image": "https://images.pexels.com/photos/2118049/pexels-photo-2118049.jpeg"
+  }
+]
