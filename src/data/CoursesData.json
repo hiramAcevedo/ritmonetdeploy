@@ -1,351 +1,350 @@
 [
-    {
-      "id": 1,
-      "title": "Guitarra Eléctrica",
-      "instrument": "guitarra",
-      "instructor": "Carlos Santana",
-      "duration": "8 semanas",
-      "level": "Intermedio",
-      "price": 120,
-      "description": "Domina la guitarra eléctrica con técnicas avanzadas y estilos modernos.",
-      "image": "https://images.pexels.com/photos/165971/pexels-photo-165971.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Fundamentos de la Guitarra Eléctrica",
-          "content": "Introducción a la guitarra eléctrica: partes y mantenimiento. Afinación y postura correcta. Primeros acordes y progresiones básicas. Técnica de púa: alternado y downpicking. Lectura de tablaturas. Riffs básicos y canciones sencillas."
-        },
-        {
-          "title": "Unidad 2: Técnicas Intermedias",
-          "content": "Escalas pentatónicas y modos. Técnicas de bending, slide, hammer-ons y pull-offs. Power chords y armonías. Introducción a la improvisación. Ritmos y patrones de rock y blues."
-        },
-        {
-          "title": "Unidad 3: Efectos y Sonido",
-          "content": "Uso de pedales y efectos: distorsión, delay, reverb. Configuración de amplificadores. Creación de tonos personalizados. Ejecución de solos sencillos."
-        },
-        {
-          "title": "Unidad 4: Técnicas Avanzadas",
-          "content": "Técnicas avanzadas: tapping, sweep picking. Dominio de escalas modales y arpegios. Análisis y ejecución de solos complejos. Composición y arreglos para guitarra eléctrica."
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Guitarra Clásica",
-      "instrument": "guitarra",
-      "instructor": "Andrés Segovia",
-      "duration": "12 semanas",
-      "level": "Avanzado",
-      "price": 150,
-      "description": "Aprende los fundamentos y técnicas de la guitarra clásica.",
-      "image": "https://images.pexels.com/photos/164697/pexels-photo-164697.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Introducción a la Guitarra Clásica",
-          "content": "Afinación, partes y postura correcta. Técnicas básicas de mano derecha e izquierda. Lectura de partituras simples. Primeros ejercicios de arpegios."
-        },
-        {
-          "title": "Unidad 2: Desarrollo Técnico",
-          "content": "Escalas mayores y menores. Estudios de Carcassi y Sor. Técnicas de apoyado y tirando. Introducción al trémolo y ligado."
-        },
-        {
-          "title": "Unidad 3: Repertorio Clásico",
-          "content": "Interpretación de piezas de Bach y Tárrega. Análisis musical y expresividad. Técnicas avanzadas: armónicos, vibrato. Desarrollo de la musicalidad y dinámica."
-        },
-        {
-          "title": "Unidad 4: Preparación para Recital",
-          "content": "Selección de repertorio para concierto. Prácticas de presentación en público. Grabación y autoevaluación. Consejos profesionales y cierre del curso."
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Guitarra Popular",
-      "instrument": "guitarra",
-      "instructor": "Juan Pérez",
-      "duration": "6 semanas",
-      "level": "Principiante",
-      "price": 100,
-      "description": "Iníciate en la guitarra popular y aprende tus canciones favoritas.",
-      "image": "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Fundamentos Básicos",
-          "content": "Partes de la guitarra y afinación. Acordes abiertos mayores y menores. Ritmos básicos y patrones de rasgueo. Lectura de cifrado americano."
-        },
-        {
-          "title": "Unidad 2: Progresiones y Canciones",
-          "content": "Progresiones comunes de acordes. Canciones sencillas en estilo pop y rock. Cambios de acordes fluidos. Técnicas de rasgueo dinámico."
-        },
-        {
-          "title": "Unidad 3: Introducción al Punteo",
-          "content": "Escalas pentatónicas básicas. Ejercicios de digitación. Melodías simples y riffs populares. Uso del metrónomo y tempo."
-        },
-        {
-          "title": "Unidad 4: Presentación Final",
-          "content": "Interpretación de una canción completa. Técnicas de acompañamiento y canto. Grabación y retroalimentación. Plan de estudios futuros."
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Introducción al Piano",
-      "instrument": "piano",
-      "instructor": "María González",
-      "duration": "8 semanas",
-      "level": "Principiante",
-      "price": 110,
-      "description": "Aprende los conceptos básicos del piano y comienza a tocar melodías sencillas.",
-      "image": "https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Conociendo el Piano",
-          "content": "Partes del piano y postura correcta. Identificación de teclas y octavas. Lectura básica de partituras en clave de sol y fa."
-        },
-        {
-          "title": "Unidad 2: Escalas y Acordes",
-          "content": "Escalas mayores y menores básicas. Formación de acordes tríada. Ejercicios de coordinación mano derecha e izquierda."
-        },
-        {
-          "title": "Unidad 3: Melodías Sencillas",
-          "content": "Interpretación de canciones populares sencillas. Uso del pedal de sustain. Dinámicas básicas y expresividad."
-        },
-        {
-          "title": "Unidad 4: Ensamble y Práctica",
-          "content": "Acompañamiento de melodías con acordes. Lectura a primera vista simple. Consejos para práctica efectiva. Cierre y objetivos futuros."
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Piano Intermedio",
-      "instrument": "piano",
-      "instructor": "Luis Hernández",
-      "duration": "10 semanas",
-      "level": "Intermedio",
-      "price": 130,
-      "description": "Mejora tus habilidades pianísticas y domina piezas más complejas.",
-      "image": "https://images.pexels.com/photos/2378209/pexels-photo-2378209.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Técnica y Agilidad",
-          "content": "Escalas mayores y menores en todas las tonalidades. Arpegios y ejercicios de Hanon. Desarrollo de velocidad y precisión."
-        },
-        {
-          "title": "Unidad 2: Acordes y Armonía",
-          "content": "Acordes séptimos y extendidos. Progresiones armónicas comunes. Introducción a la improvisación y voicings."
-        },
-        {
-          "title": "Unidad 3: Repertorio Clásico e Intermedio",
-          "content": "Piezas de Mozart, Beethoven y Chopin. Análisis de formas musicales. Expresión y dinámica avanzada."
-        },
-        {
-          "title": "Unidad 4: Interpretación y Estilo",
-          "content": "Estilos romántico y contemporáneo. Técnicas de pedalización avanzada. Preparación para recitales y presentaciones."
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "title": "Piano Avanzado",
-      "instrument": "piano",
-      "instructor": "Ana López",
-      "duration": "12 semanas",
-      "level": "Avanzado",
-      "price": 160,
-      "description": "Perfecciona tu técnica y prepárate para conciertos profesionales.",
-      "image": "https://images.pexels.com/photos/1293551/pexels-photo-1293551.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Técnica Virtuosa",
-          "content": "Estudios avanzados de Chopin y Liszt. Desarrollo de trinos, octavas y arpegios rápidos. Control de articulaciones y expresividad extrema."
-        },
-        {
-          "title": "Unidad 2: Repertorio Avanzado",
-          "content": "Interpretación de obras complejas (Rachmaninoff, Prokofiev). Análisis profundo de piezas. Trabajo en memorización y resistencia."
-        },
-        {
-          "title": "Unidad 3: Interpretación Artística",
-          "content": "Estilos interpretativos y personalización. Preparación mental y emocional para conciertos. Técnicas de improvisación avanzada."
-        },
-        {
-          "title": "Unidad 4: Carrera Profesional",
-          "content": "Gestión de carrera musical. Preparación para concursos y audiciones. Networking y promoción personal. Reflexión y objetivos a largo plazo."
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "title": "Percusiones",
-      "instrument": "bateria",
-      "instructor": "Miguel Ángel",
-      "duration": "6 semanas",
-      "level": "Principiante",
-      "price": 100,
-      "description": "Introducción a las percusiones y ritmos básicos.",
-      "image": "https://images.pexels.com/photos/65717/pexels-photo-65717.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Introducción a las Percusiones",
-          "content": "Conocimiento de instrumentos: congas, bongós, djembé. Técnicas básicas de golpeo y postura. Ritmos básicos latinos y africanos."
-        },
-        {
-          "title": "Unidad 2: Ritmos y Patrones",
-          "content": "Aprendizaje de ritmos como el son, samba y cumbia. Coordinación y independencia de manos. Práctica con metrónomo."
-        },
-        {
-          "title": "Unidad 3: Instrumentos Adicionales",
-          "content": "Uso de cajón peruano y timbales. Combinación de patrones y fills sencillos. Acompañamiento de diferentes estilos musicales."
-        },
-        {
-          "title": "Unidad 4: Ensamble y Performance",
-          "content": "Interpretación en conjunto con otros músicos. Improvisación básica. Presentación final y retroalimentación."
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "title": "Introducción a la Batería",
-      "instrument": "bateria",
-      "instructor": "Roberto Martínez",
-      "duration": "8 semanas",
-      "level": "Principiante",
-      "price": 110,
-      "description": "Aprende a tocar la batería desde cero.",
-      "image": "https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Fundamentos de la Batería",
-          "content": "Partes de la batería y configuración básica. Postura y técnica de agarre de baquetas. Patrones de rock y pop básicos."
-        },
-        {
-          "title": "Unidad 2: Coordinación y Ritmo",
-          "content": "Ejercicios de independencia de extremidades. Uso del metrónomo y tempo. Introducción a fills sencillos."
-        },
-        {
-          "title": "Unidad 3: Lectura Rítmica",
-          "content": "Notación musical para batería. Lectura de patrones rítmicos simples. Aplicación en canciones."
-        },
-        {
-          "title": "Unidad 4: Interpretación de Canciones",
-          "content": "Aprendizaje de canciones populares. Técnicas de dinámica y expresión. Grabación y autoevaluación."
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "title": "Batería Avanzada",
-      "instrument": "bateria",
-      "instructor": "Fernando Díaz",
-      "duration": "10 semanas",
-      "level": "Avanzado",
-      "price": 130,
-      "description": "Domina técnicas avanzadas y estilos complejos en la batería.",
-      "image": "https://images.pexels.com/photos/164967/pexels-photo-164967.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Técnicas Avanzadas",
-          "content": "Rudimentos complejos y moeller technique. Uso de dobles pedales y coordinación avanzada. Desarrollo de velocidad y precisión."
-        },
-        {
-          "title": "Unidad 2: Estilos y Géneros",
-          "content": "Patrones de jazz, metal y funk. Polirritmos y compases irregulares. Acompañamiento y solos en diferentes estilos."
-        },
-        {
-          "title": "Unidad 3: Improvisación y Creatividad",
-          "content": "Construcción de solos de batería. Uso de dinámicas y texturas. Técnicas de improvisación en vivo."
-        },
-        {
-          "title": "Unidad 4: Profesionalismo y Grabación",
-          "content": "Trabajo en estudio y micrófonos. Lectura a primera vista avanzada. Preparación para audiciones y sesiones."
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "title": "Introducción al Canto",
-      "instrument": "tecnica-vocal",
-      "instructor": "Sofía Ruiz",
-      "duration": "6 semanas",
-      "level": "Principiante",
-      "price": 100,
-      "description": "Descubre tu voz y aprende técnicas básicas de canto.",
-      "image": "https://images.pexels.com/photos/7086299/pexels-photo-7086299.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Fundamentos de la Voz",
-          "content": "Anatomía básica del aparato vocal. Ejercicios de respiración y relajación. Postura correcta para cantar."
-        },
-        {
-          "title": "Unidad 2: Técnicas Vocales Básicas",
-          "content": "Emisión de sonidos y vocalización. Escalas y arpegios simples. Dicción y articulación."
-        },
-        {
-          "title": "Unidad 3: Expresión y Confianza",
-          "content": "Interpretación de canciones sencillas. Manejo del micrófono. Control del nerviosismo escénico."
-        },
-        {
-          "title": "Unidad 4: Presentación Final",
-          "content": "Selección de una canción para interpretar. Práctica y retroalimentación. Plan de desarrollo vocal futuro."
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "title": "Bel Canto",
-      "instrument": "tecnica-vocal",
-      "instructor": "Valentina Moreno",
-      "duration": "12 semanas",
-      "level": "Intermedio",
-      "price": 140,
-      "description": "Perfecciona tu técnica vocal con el estilo del bel canto.",
-      "image": "https://images.pexels.com/photos/7567423/pexels-photo-7567423.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Técnica Vocal Clásica",
-          "content": "Respiración diafragmática y apoyo. Emisión vocal y colocación del sonido. Vocalizaciones avanzadas."
-        },
-        {
-          "title": "Unidad 2: Repertorio Operístico",
-          "content": "Estudio de arias y lieds. Interpretación en diferentes idiomas. Expresión dramática y emocional."
-        },
-        {
-          "title": "Unidad 3: Técnica Avanzada",
-          "content": "Control del vibrato y agilidad vocal. Extensión de registro y proyección. Trabajo en falsete y voz mixta."
-        },
-        {
-          "title": "Unidad 4: Presentación y Escenario",
-          "content": "Manejo del escenario y presencia. Vestuario y caracterización. Preparación para audiciones y concursos."
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "title": "Canto Popular",
-      "instrument": "tecnica-vocal",
-      "instructor": "Daniela Fernández",
-      "duration": "8 semanas",
-      "level": "Intermedio",
-      "price": 110,
-      "description": "Aprende a interpretar canciones populares y mejorar tu presencia escénica.",
-      "image": "https://images.pexels.com/photos/5648357/pexels-photo-5648357.jpeg",
-      "units": [
-        {
-          "title": "Unidad 1: Estilos Vocales",
-          "content": "Características del pop, rock y jazz. Adaptación de la técnica vocal a estilos populares. Análisis de cantantes reconocidos."
-        },
-        {
-          "title": "Unidad 2: Interpretación y Sentimiento",
-          "content": "Transmisión de emociones a través de la voz. Fraseo y expresión en canciones. Técnicas de storytelling."
-        },
-        {
-          "title": "Unidad 3: Performance y Escenario",
-          "content": "Uso del micrófono y equipo de sonido. Coreografía básica y movimientos escénicos. Interacción con la audiencia."
-        },
-        {
-          "title": "Unidad 4: Creación Artística",
-          "content": "Composición de canciones propias. Colaboración con otros músicos. Grabación de una demo."
-        }
-      ]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Guitarra Eléctrica",
+    "instrument": "guitarra",
+    "instructor": "Carlos Santana",
+    "duration": "8 semanas",
+    "level": "Intermedio",
+    "price": 120,
+    "description": "Domina la guitarra eléctrica con técnicas avanzadas y estilos modernos.",
+    "image": "https://images.pexels.com/photos/165971/pexels-photo-165971.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Fundamentos de la Guitarra Eléctrica",
+        "content": "Introducción a la guitarra eléctrica: partes y mantenimiento. Afinación y postura correcta. Primeros acordes y progresiones básicas. Técnica de púa: alternado y downpicking. Lectura de tablaturas. Riffs básicos y canciones sencillas."
+      },
+      {
+        "title": "Unidad 2: Técnicas Intermedias",
+        "content": "Escalas pentatónicas y modos. Técnicas de bending, slide, hammer-ons y pull-offs. Power chords y armonías. Introducción a la improvisación. Ritmos y patrones de rock y blues."
+      },
+      {
+        "title": "Unidad 3: Efectos y Sonido",
+        "content": "Uso de pedales y efectos: distorsión, delay, reverb. Configuración de amplificadores. Creación de tonos personalizados. Ejecución de solos sencillos."
+      },
+      {
+        "title": "Unidad 4: Técnicas Avanzadas",
+        "content": "Técnicas avanzadas: tapping, sweep picking. Dominio de escalas modales y arpegios. Análisis y ejecución de solos complejos. Composición y arreglos para guitarra eléctrica."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Guitarra Clásica",
+    "instrument": "guitarra",
+    "instructor": "Andrés Segovia",
+    "duration": "12 semanas",
+    "level": "Avanzado",
+    "price": 150,
+    "description": "Aprende los fundamentos y técnicas de la guitarra clásica.",
+    "image": "https://images.pexels.com/photos/164697/pexels-photo-164697.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Introducción a la Guitarra Clásica",
+        "content": "Afinación, partes y postura correcta. Técnicas básicas de mano derecha e izquierda. Lectura de partituras simples. Primeros ejercicios de arpegios."
+      },
+      {
+        "title": "Unidad 2: Desarrollo Técnico",
+        "content": "Escalas mayores y menores. Estudios de Carcassi y Sor. Técnicas de apoyado y tirando. Introducción al trémolo y ligado."
+      },
+      {
+        "title": "Unidad 3: Repertorio Clásico",
+        "content": "Interpretación de piezas de Bach y Tárrega. Análisis musical y expresividad. Técnicas avanzadas: armónicos, vibrato. Desarrollo de la musicalidad y dinámica."
+      },
+      {
+        "title": "Unidad 4: Preparación para Recital",
+        "content": "Selección de repertorio para concierto. Prácticas de presentación en público. Grabación y autoevaluación. Consejos profesionales y cierre del curso."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Guitarra Popular",
+    "instrument": "guitarra",
+    "instructor": "Juan Pérez",
+    "duration": "6 semanas",
+    "level": "Principiante",
+    "price": 100,
+    "description": "Iníciate en la guitarra popular y aprende tus canciones favoritas.",
+    "image": "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Fundamentos Básicos",
+        "content": "Partes de la guitarra y afinación. Acordes abiertos mayores y menores. Ritmos básicos y patrones de rasgueo. Lectura de cifrado americano."
+      },
+      {
+        "title": "Unidad 2: Progresiones y Canciones",
+        "content": "Progresiones comunes de acordes. Canciones sencillas en estilo pop y rock. Cambios de acordes fluidos. Técnicas de rasgueo dinámico."
+      },
+      {
+        "title": "Unidad 3: Introducción al Punteo",
+        "content": "Escalas pentatónicas básicas. Ejercicios de digitación. Melodías simples y riffs populares. Uso del metrónomo y tempo."
+      },
+      {
+        "title": "Unidad 4: Presentación Final",
+        "content": "Interpretación de una canción completa. Técnicas de acompañamiento y canto. Grabación y retroalimentación. Plan de estudios futuros."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Introducción al Piano",
+    "instrument": "piano",
+    "instructor": "María González",
+    "duration": "8 semanas",
+    "level": "Principiante",
+    "price": 110,
+    "description": "Aprende los conceptos básicos del piano y comienza a tocar melodías sencillas.",
+    "image": "https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Conociendo el Piano",
+        "content": "Partes del piano y postura correcta. Identificación de teclas y octavas. Lectura básica de partituras en clave de sol y fa."
+      },
+      {
+        "title": "Unidad 2: Escalas y Acordes",
+        "content": "Escalas mayores y menores básicas. Formación de acordes tríada. Ejercicios de coordinación mano derecha e izquierda."
+      },
+      {
+        "title": "Unidad 3: Melodías Sencillas",
+        "content": "Interpretación de canciones populares sencillas. Uso del pedal de sustain. Dinámicas básicas y expresividad."
+      },
+      {
+        "title": "Unidad 4: Ensamble y Práctica",
+        "content": "Acompañamiento de melodías con acordes. Lectura a primera vista simple. Consejos para práctica efectiva. Cierre y objetivos futuros."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Piano Intermedio",
+    "instrument": "piano",
+    "instructor": "Luis Hernández",
+    "duration": "10 semanas",
+    "level": "Intermedio",
+    "price": 130,
+    "description": "Mejora tus habilidades pianísticas y domina piezas más complejas.",
+    "image": "https://images.pexels.com/photos/2378209/pexels-photo-2378209.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Técnica y Agilidad",
+        "content": "Escalas mayores y menores en todas las tonalidades. Arpegios y ejercicios de Hanon. Desarrollo de velocidad y precisión."
+      },
+      {
+        "title": "Unidad 2: Acordes y Armonía",
+        "content": "Acordes séptimos y extendidos. Progresiones armónicas comunes. Introducción a la improvisación y voicings."
+      },
+      {
+        "title": "Unidad 3: Repertorio Clásico e Intermedio",
+        "content": "Piezas de Mozart, Beethoven y Chopin. Análisis de formas musicales. Expresión y dinámica avanzada."
+      },
+      {
+        "title": "Unidad 4: Interpretación y Estilo",
+        "content": "Estilos romántico y contemporáneo. Técnicas de pedalización avanzada. Preparación para recitales y presentaciones."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Piano Avanzado",
+    "instrument": "piano",
+    "instructor": "Ana López",
+    "duration": "12 semanas",
+    "level": "Avanzado",
+    "price": 160,
+    "description": "Perfecciona tu técnica y prepárate para conciertos profesionales.",
+    "image": "https://images.pexels.com/photos/1293551/pexels-photo-1293551.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Técnica Virtuosa",
+        "content": "Estudios avanzados de Chopin y Liszt. Desarrollo de trinos, octavas y arpegios rápidos. Control de articulaciones y expresividad extrema."
+      },
+      {
+        "title": "Unidad 2: Repertorio Avanzado",
+        "content": "Interpretación de obras complejas (Rachmaninoff, Prokofiev). Análisis profundo de piezas. Trabajo en memorización y resistencia."
+      },
+      {
+        "title": "Unidad 3: Interpretación Artística",
+        "content": "Estilos interpretativos y personalización. Preparación mental y emocional para conciertos. Técnicas de improvisación avanzada."
+      },
+      {
+        "title": "Unidad 4: Carrera Profesional",
+        "content": "Gestión de carrera musical. Preparación para concursos y audiciones. Networking y promoción personal. Reflexión y objetivos a largo plazo."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Percusiones",
+    "instrument": "percusión",
+    "instructor": "Miguel Ángel",
+    "duration": "6 semanas",
+    "level": "Principiante",
+    "price": 100,
+    "description": "Introducción a las percusiones y ritmos básicos.",
+    "image": "https://images.pexels.com/photos/65717/pexels-photo-65717.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Introducción a las Percusiones",
+        "content": "Conocimiento de instrumentos: congas, bongós, djembé. Técnicas básicas de golpeo y postura. Ritmos básicos latinos y africanos."
+      },
+      {
+        "title": "Unidad 2: Ritmos y Patrones",
+        "content": "Aprendizaje de ritmos como el son, samba y cumbia. Coordinación y independencia de manos. Práctica con metrónomo."
+      },
+      {
+        "title": "Unidad 3: Instrumentos Adicionales",
+        "content": "Uso de cajón peruano y timbales. Combinación de patrones y fills sencillos. Acompañamiento de diferentes estilos musicales."
+      },
+      {
+        "title": "Unidad 4: Ensamble y Performance",
+        "content": "Interpretación en conjunto con otros músicos. Improvisación básica. Presentación final y retroalimentación."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Introducción a la Batería",
+    "instrument": "batería",
+    "instructor": "Roberto Martínez",
+    "duration": "8 semanas",
+    "level": "Principiante",
+    "price": 110,
+    "description": "Aprende a tocar la batería desde cero.",
+    "image": "https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Fundamentos de la Batería",
+        "content": "Partes de la batería y configuración básica. Postura y técnica de agarre de baquetas. Patrones de rock y pop básicos."
+      },
+      {
+        "title": "Unidad 2: Coordinación y Ritmo",
+        "content": "Ejercicios de independencia de extremidades. Uso del metrónomo y tempo. Introducción a fills sencillos."
+      },
+      {
+        "title": "Unidad 3: Lectura Rítmica",
+        "content": "Notación musical para batería. Lectura de patrones rítmicos simples. Aplicación en canciones."
+      },
+      {
+        "title": "Unidad 4: Interpretación de Canciones",
+        "content": "Aprendizaje de canciones populares. Técnicas de dinámica y expresión. Grabación y autoevaluación."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Batería Avanzada",
+    "instrument": "batería",
+    "instructor": "Fernando Díaz",
+    "duration": "10 semanas",
+    "level": "Avanzado",
+    "price": 130,
+    "description": "Domina técnicas avanzadas y estilos complejos en la batería.",
+    "image": "https://images.pexels.com/photos/164967/pexels-photo-164967.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Técnicas Avanzadas",
+        "content": "Rudimentos complejos y moeller technique. Uso de dobles pedales y coordinación avanzada. Desarrollo de velocidad y precisión."
+      },
+      {
+        "title": "Unidad 2: Estilos y Géneros",
+        "content": "Patrones de jazz, metal y funk. Polirritmos y compases irregulares. Acompañamiento y solos en diferentes estilos."
+      },
+      {
+        "title": "Unidad 3: Improvisación y Creatividad",
+        "content": "Construcción de solos de batería. Uso de dinámicas y texturas. Técnicas de improvisación en vivo."
+      },
+      {
+        "title": "Unidad 4: Profesionalismo y Grabación",
+        "content": "Trabajo en estudio y micrófonos. Lectura a primera vista avanzada. Preparación para audiciones y sesiones."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Introducción al Canto",
+    "instrument": "técnica vocal",
+    "instructor": "Sofía Ruiz",
+    "duration": "6 semanas",
+    "level": "Principiante",
+    "price": 100,
+    "description": "Descubre tu voz y aprende técnicas básicas de canto.",
+    "image": "https://images.pexels.com/photos/7086299/pexels-photo-7086299.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Fundamentos de la Voz",
+        "content": "Anatomía básica del aparato vocal. Ejercicios de respiración y relajación. Postura correcta para cantar."
+      },
+      {
+        "title": "Unidad 2: Técnicas Vocales Básicas",
+        "content": "Emisión de sonidos y vocalización. Escalas y arpegios simples. Dicción y articulación."
+      },
+      {
+        "title": "Unidad 3: Expresión y Confianza",
+        "content": "Interpretación de canciones sencillas. Manejo del micrófono. Control del nerviosismo escénico."
+      },
+      {
+        "title": "Unidad 4: Presentación Final",
+        "content": "Selección de una canción para interpretar. Práctica y retroalimentación. Plan de desarrollo vocal futuro."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Bel Canto",
+    "instrument": "técnica vocal",
+    "instructor": "Valentina Moreno",
+    "duration": "12 semanas",
+    "level": "Intermedio",
+    "price": 140,
+    "description": "Perfecciona tu técnica vocal con el estilo del bel canto.",
+    "image": "https://images.pexels.com/photos/7567423/pexels-photo-7567423.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Técnica Vocal Clásica",
+        "content": "Respiración diafragmática y apoyo. Emisión vocal y colocación del sonido. Vocalizaciones avanzadas."
+      },
+      {
+        "title": "Unidad 2: Repertorio Operístico",
+        "content": "Estudio de arias y lieds. Interpretación en diferentes idiomas. Expresión dramática y emocional."
+      },
+      {
+        "title": "Unidad 3: Técnica Avanzada",
+        "content": "Control del vibrato y agilidad vocal. Extensión de registro y proyección. Trabajo en falsete y voz mixta."
+      },
+      {
+        "title": "Unidad 4: Presentación y Escenario",
+        "content": "Manejo del escenario y presencia. Vestuario y caracterización. Preparación para audiciones y concursos."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Canto Popular",
+    "instrument": "técnica vocal",
+    "instructor": "Daniela Fernández",
+    "duration": "8 semanas",
+    "level": "Intermedio",
+    "price": 110,
+    "description": "Aprende a interpretar canciones populares y mejorar tu presencia escénica.",
+    "image": "https://images.pexels.com/photos/5648357/pexels-photo-5648357.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Estilos Vocales",
+        "content": "Características del pop, rock y jazz. Adaptación de la técnica vocal a estilos populares. Análisis de cantantes reconocidos."
+      },
+      {
+        "title": "Unidad 2: Interpretación y Sentimiento",
+        "content": "Transmisión de emociones a través de la voz. Fraseo y expresión en canciones. Técnicas de storytelling."
+      },
+      {
+        "title": "Unidad 3: Performance y Escenario",
+        "content": "Uso del micrófono y equipo de sonido. Coreografía básica y movimientos escénicos. Interacción con la audiencia."
+      },
+      {
+        "title": "Unidad 4: Creación Artística",
+        "content": "Composición de canciones propias. Colaboración con otros músicos. Grabación de una demo."
+      }
+    ]
+  }
+]

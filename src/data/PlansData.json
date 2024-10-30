@@ -1,0 +1,81 @@
+[
+    {
+      "name": "Beginner",
+      "durations": [
+        {
+          "period": "1 mes",
+          "price": "$19/mes",
+          "bonus": ""
+        },
+        {
+          "period": "6 meses",
+          "price": "$114",
+          "bonus": "+1 mes gratis"
+        },
+        {
+          "period": "12 meses",
+          "price": "$228",
+          "bonus": "+2 meses gratis"
+        }
+      ],
+      "features": [
+        "Acceso a 1 curso de instrumento de nivel principiante.",
+        "2 horas de sesión virtual semanal con un tutor.",
+        "Soporte por correo electrónico."
+      ]
+    },
+    {
+      "name": "Medium",
+      "durations": [
+        {
+          "period": "1 mes",
+          "price": "$49/mes",
+          "bonus": ""
+        },
+        {
+          "period": "6 meses",
+          "price": "$294",
+          "bonus": "+1 mes gratis"
+        },
+        {
+          "period": "12 meses",
+          "price": "$588",
+          "bonus": "+2 meses gratis"
+        }
+      ],
+      "features": [
+        "Acceso a 2 cursos de nivel principiante.",
+        "Acceso a 1 curso de nivel intermedio.",
+        "4 horas de sesión virtual semanal con un tutor.",
+        "Acceso a partituras y videos exclusivos.",
+        "Una Masterclass mensual."
+      ]
+    },
+    {
+      "name": "Pro",
+      "durations": [
+        {
+          "period": "1 mes",
+          "price": "$99/mes",
+          "bonus": ""
+        },
+        {
+          "period": "6 meses",
+          "price": "$594",
+          "bonus": "+1 mes gratis"
+        },
+        {
+          "period": "12 meses",
+          "price": "$1188",
+          "bonus": "+2 meses gratis"
+        }
+      ],
+      "features": [
+        "Acceso a todos los cursos de todos los niveles.",
+        "6 horas de sesión virtual semanal con un tutor.",
+        "Acceso a partituras y videos exclusivos.",
+        "Una Masterclass quincenal.",
+        "Derecho a producir un disco anual."
+      ]
+    }
+  ]  
