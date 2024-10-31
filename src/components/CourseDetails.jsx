@@ -4,6 +4,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import courses from '../data/CoursesData.json';
 import CourseUnits from './CourseUnits';
+import { slugify } from '../utils/slugify'; // Importamos slugify
 
 const CourseDetails = () => {
   const { instrument, courseId } = useParams();
@@ -12,7 +13,7 @@ const CourseDetails = () => {
   const course = courses.find(
     (c) =>
       c.id === parseInt(courseId) &&
-      c.instrument.toLowerCase() === instrument.toLowerCase()
+      slugify(c.instrument) === instrument // Usamos slugify aquí
   );
 
   if (!course) {

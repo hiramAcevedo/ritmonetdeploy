@@ -21,10 +21,12 @@ import SubscribedCourseDetails from './components/SubscribedCourseDetails.jsx';
 import TeacherDetails from './components/TeacherDetails.jsx';
 import Contact from './components/Contact.jsx';
 
-// Nuevos imports
 import CourseSelection from './components/CourseSelection.jsx';
 import TeacherSelection from './components/TeacherSelection.jsx';
 import SubscriptionSummary from './components/SubscriptionSummary.jsx';
+
+// Importamos slugify
+import { slugify } from './utils/slugify';
 
 // Importamos el UserProvider
 import { UserProvider } from './context/UserContext.jsx';
@@ -35,6 +37,9 @@ function App() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
+  // Lista de instrumentos disponibles
+  const instruments = ['Guitarra', 'Piano', 'Batería', 'Técnica Vocal'];
 
   return (
     <UserProvider>

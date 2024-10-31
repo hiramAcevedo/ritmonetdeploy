@@ -14,14 +14,48 @@ const SubscriptionSummary = () => {
     return null;
   }
 
+  // Calcular horas de clase según el plan y maestros
+  const calculateClassHours = () => {
+    let totalHours = 0;
+    let hoursDistribution = [];
+
+    if (planName === 'Beginner') {
+      totalHours = 2;
+      hoursDistribution.push({ teacher: selectedTeachers[0], hours: 2 });
+    } else if (planName === 'Medium') {
+      totalHours = 4;
+      if (selectedTeachers.length === 1) {
+        hoursDistribution.push({ teacher: selectedTeachers[0], hours: 4 });
+      } else if (selectedTeachers.length === 2) {
+        hoursDistribution.push({ teacher: selectedTeachers[0], hours: 3 });
+        hoursDistribution.push({ teacher: selectedTeachers[1], hours: 1 });
+      }
+    } else if (planName === 'Pro') {
+      totalHours = 6;
+      if (selectedTeachers.length === 1) {
+        hoursDistribution.push({ teacher: selectedTeachers[0], hours: 6 });
+      } else if (selectedTeachers.length === 2) {
+        hoursDistribution.push({ teacher: selectedTeachers[0], hours: 4 });
+        hoursDistribution.push({ teacher: selectedTeachers[1], hours: 2 });
+      } else if (selectedTeachers.length === 3) {
+        hoursDistribution.push({ teacher: selectedTeachers[0], hours: 4 });
+        hoursDistribution.push({ teacher: selectedTeachers[1], hours: 1 });
+        hoursDistribution.push({ teacher: selectedTeachers[2], hours: 1 });
+      }
+    }
+
+    return { totalHours, hoursDistribution };
+  };
+
+  const { totalHours, hoursDistribution } = calculateClassHours();
+
   const handleConfirm = () => {
-    // Aquí puedes manejar la confirmación final y proceso de pago
     navigate('/subscription-confirmation');
   };
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <div className="bg-white shadow-md rounded-lg p-8">
+      <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-8">
         <h2 className="text-4xl font-bold mb-6 text-center">
           Resumen de tu Suscripción
         </h2>
@@ -37,7 +71,7 @@ const SubscriptionSummary = () => {
             {selectedCourses.map((course) => (
               <div
                 key={course.id}
-                className="border rounded-lg p-4 flex items-center"
+                className="border rounded-lg p-4 flex items-center bg-white dark:bg-gray-700"
               >
                 <img
                   src={course.image}
@@ -56,10 +90,10 @@ const SubscriptionSummary = () => {
         <div className="mb-6">
           <h3 className="text-2xl font-semibold mb-4">Maestros Seleccionados:</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {selectedTeachers.map((teacher) => (
+            {hoursDistribution.map(({ teacher, hours }) => (
               <div
                 key={teacher.id}
-                className="border rounded-lg p-4 flex items-center"
+                className="border rounded-lg p-4 flex items-center bg-white dark:bg-gray-700"
               >
                 <img
                   src={teacher.image}
@@ -69,6 +103,7 @@ const SubscriptionSummary = () => {
                 <div>
                   <h4 className="font-bold">{teacher.name}</h4>
                   <p className="text-sm">Instrumento: {teacher.instrument}</p>
+                  <p className="text-sm">Horas por semana: {hours}</p>
                 </div>
               </div>
             ))}
@@ -77,8 +112,7 @@ const SubscriptionSummary = () => {
 
         <div className="mb-8">
           <p className="text-lg">
-            De acuerdo con tu plan, tendrás acceso a los cursos y maestros
-            seleccionados con la distribución de horas correspondiente.
+            Total de horas de clase por semana: <strong>{totalHours} horas</strong>.
           </p>
         </div>
 

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import teachersData from '../data/TeachersData.json';
+import Alert from './Alert';
 
 const TeacherSelection = () => {
   const location = useLocation();
@@ -11,7 +12,6 @@ const TeacherSelection = () => {
   const { selectedCourses, planName } = location.state || {};
 
   if (!selectedCourses || !planName) {
-    // Si no hay información previa, redirige a la página de suscripción
     navigate('/subscription');
     return null;
   }
@@ -24,13 +24,13 @@ const TeacherSelection = () => {
   };
 
   const [selectedTeachers, setSelectedTeachers] = useState([]);
+  const [alertMessage, setAlertMessage] = useState('');
 
   // Obtener el instrumento principal según las reglas
   const getPrimaryInstrument = () => {
     if (planName === 'Beginner') {
       return selectedCourses[0].instrument;
     } else if (planName === 'Medium' || planName === 'Pro') {
-      // Instrumento del curso intermedio o avanzado (prioridad)
       const intermediateCourse = selectedCourses.find(
         (c) => c.level === 'Intermedio'
       );
@@ -42,7 +42,6 @@ const TeacherSelection = () => {
       } else if (intermediateCourse) {
         return intermediateCourse.instrument;
       } else {
-        // Si no hay intermedio o avanzado, tomar el primer curso de principiante
         return selectedCourses[0].instrument;
       }
     }
@@ -52,10 +51,11 @@ const TeacherSelection = () => {
   const primaryInstrument = getPrimaryInstrument();
 
   const handleTeacherSelect = (teacher) => {
+    setAlertMessage(''); // Limpiar cualquier alerta previa
+
     const isSelected = selectedTeachers.find((t) => t.id === teacher.id);
 
     if (isSelected) {
-      // Deseleccionar maestro
       setSelectedTeachers(selectedTeachers.filter((t) => t.id !== teacher.id));
     } else {
       if (selectedTeachers.length < planLimits[planName]) {
@@ -64,25 +64,25 @@ const TeacherSelection = () => {
           selectedTeachers.length === 0 &&
           teacher.instrument !== primaryInstrument
         ) {
-          alert(
+          setAlertMessage(
             `El primer maestro debe ser de tu instrumento principal: ${primaryInstrument}.`
           );
           return;
         }
         setSelectedTeachers([...selectedTeachers, teacher]);
       } else {
-        alert(`Puedes seleccionar hasta ${planLimits[planName]} maestro(s) en tu plan.`);
+        setAlertMessage(
+          `Puedes seleccionar hasta ${planLimits[planName]} maestro(s) en tu plan.`
+        );
       }
     }
   };
 
   const handleContinue = () => {
-    // Validar que se haya seleccionado el número correcto de maestros
     if (selectedTeachers.length === 0) {
-      alert('Debes seleccionar al menos un maestro.');
+      setAlertMessage('Debes seleccionar al menos un maestro.');
       return;
     }
-    // Pasar las selecciones al resumen
     navigate('/subscription-summary', {
       state: { selectedCourses, selectedTeachers, planName },
     });
@@ -90,13 +90,19 @@ const TeacherSelection = () => {
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold mb-8">Selecciona tus Maestros</h2>
+      <h2 className="text-3xl font-bold mb-4">Selecciona tus Maestros</h2>
       <p className="mb-4">
         Tu instrumento principal es: <strong>{primaryInstrument}</strong>
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      {/* Incluir el componente Alert */}
+      <Alert
+        message={alertMessage}
+        onClose={() => setAlertMessage('')}
+      />
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {teachersData.map((teacher) => {
-          // Verificar si el maestro enseña algún instrumento de los cursos seleccionados
           const teachesSelectedInstrument = selectedCourses.some(
             (course) =>
               course.instrument.toLowerCase() === teacher.instrument.toLowerCase()
@@ -109,20 +115,22 @@ const TeacherSelection = () => {
           return (
             <div
               key={teacher.id}
-              className={`border rounded-lg overflow-hidden cursor-pointer ${
+              className={`border rounded-lg overflow-hidden cursor-pointer text-sm ${
                 isDisabled ? 'opacity-50 cursor-not-allowed' : ''
-              } ${isSelected ? 'border-yellow-500' : ''}`}
+              } ${
+                isSelected ? 'bg-yellow-100 dark:bg-yellow-500' : 'bg-white dark:bg-gray-800'
+              }`}
               onClick={() => !isDisabled && handleTeacherSelect(teacher)}
             >
               <img
                 src={teacher.image}
                 alt={teacher.name}
-                className="w-full h-48 object-cover"
+                className="w-full h-32 object-cover"
               />
-              <div className="p-4">
-                <h3 className="font-bold text-lg mb-2">{teacher.name}</h3>
-                <p className="text-sm mb-2">Instrumento: {teacher.instrument}</p>
-                <p className="text-sm mb-2">Experiencia: {teacher.experience}</p>
+              <div className="p-2">
+                <h3 className="font-bold text-base mb-1">{teacher.name}</h3>
+                <p className="text-xs mb-1">Instrumento: {teacher.instrument}</p>
+                <p className="text-xs mb-1">Experiencia: {teacher.experience}</p>
               </div>
             </div>
           );

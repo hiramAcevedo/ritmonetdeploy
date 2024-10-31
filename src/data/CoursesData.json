@@ -176,7 +176,7 @@
   {
     "id": 7,
     "title": "Percusiones",
-    "instrument": "percusión",
+    "instrument": "batería",
     "instructor": "Miguel Ángel",
     "duration": "6 semanas",
     "level": "Principiante",
@@ -233,6 +233,35 @@
   },
   {
     "id": 9,
+    "title": "Batería Intermedia",
+    "instrument": "batería",
+    "instructor": "Laura Gómez",
+    "duration": "8 semanas",
+    "level": "Intermedio",
+    "price": 120,
+    "description": "Mejora tus habilidades en batería y domina técnicas más avanzadas.",
+    "image": "https://images.pexels.com/photos/164936/pexels-photo-164936.jpeg",
+    "units": [
+      {
+        "title": "Unidad 1: Técnicas Intermedias",
+        "content": "Desarrollo de rudimentos avanzados. Independencia y coordinación mejorada. Uso de ghost notes y dinámicas."
+      },
+      {
+        "title": "Unidad 2: Estilos y Géneros",
+        "content": "Introducción a ritmos latinos y afro-cubanos. Patrones de jazz y swing. Adaptación a diferentes estilos musicales."
+      },
+      {
+        "title": "Unidad 3: Improvisación",
+        "content": "Técnicas de solo de batería. Uso creativo de fills y breaks. Desarrollo de estilo personal."
+      },
+      {
+        "title": "Unidad 4: Trabajo en Banda",
+        "content": "Comunicación con otros músicos. Interpretación de partituras y charts. Preparación para presentaciones en vivo."
+      }
+    ]
+  },  
+  {
+    "id": 10,
     "title": "Batería Avanzada",
     "instrument": "batería",
     "instructor": "Fernando Díaz",
@@ -261,7 +290,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 11,
     "title": "Introducción al Canto",
     "instrument": "técnica vocal",
     "instructor": "Sofía Ruiz",
@@ -290,7 +319,7 @@
     ]
   },
   {
-    "id": 11,
+    "id": 12,
     "title": "Bel Canto",
     "instrument": "técnica vocal",
     "instructor": "Valentina Moreno",
@@ -319,12 +348,12 @@
     ]
   },
   {
-    "id": 12,
+    "id": 13,
     "title": "Canto Popular",
     "instrument": "técnica vocal",
     "instructor": "Daniela Fernández",
     "duration": "8 semanas",
-    "level": "Intermedio",
+    "level": "Avanzado",
     "price": 110,
     "description": "Aprende a interpretar canciones populares y mejorar tu presencia escénica.",
     "image": "https://images.pexels.com/photos/5648357/pexels-photo-5648357.jpeg",
