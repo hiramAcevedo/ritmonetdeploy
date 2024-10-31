@@ -9,12 +9,12 @@
         },
         {
           "period": "6 meses",
-          "price": "$114",
+          "price": "$114/semestre",
           "bonus": "+1 mes gratis"
         },
         {
           "period": "12 meses",
-          "price": "$228",
+          "price": "$228/año",
           "bonus": "+2 meses gratis"
         }
       ],
@@ -34,12 +34,12 @@
         },
         {
           "period": "6 meses",
-          "price": "$294",
+          "price": "$294/semestre",
           "bonus": "+1 mes gratis"
         },
         {
           "period": "12 meses",
-          "price": "$588",
+          "price": "$588/año",
           "bonus": "+2 meses gratis"
         }
       ],
@@ -61,12 +61,12 @@
         },
         {
           "period": "6 meses",
-          "price": "$594",
+          "price": "$594/semestre",
           "bonus": "+1 mes gratis"
         },
         {
           "period": "12 meses",
-          "price": "$1188",
+          "price": "$1188/año",
           "bonus": "+2 meses gratis"
         }
       ],
