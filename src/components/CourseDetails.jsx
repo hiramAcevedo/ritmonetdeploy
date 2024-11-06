@@ -1,13 +1,15 @@
 // src/components/CourseDetails.jsx
 
-import React from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import courses from '../data/CoursesData.json';
 import CourseUnits from './CourseUnits';
 import { slugify } from '../utils/slugify'; // Importamos slugify
+import { UserContext } from '../context/UserContext'; // Importamos el contexto
 
 const CourseDetails = () => {
   const { instrument, courseId } = useParams();
+  const { addToCart, cart, acquiredCourses } = useContext(UserContext); // Obtenemos addToCart, cart y acquiredCourses
 
   // Buscar el curso correspondiente
   const course = courses.find(
@@ -20,8 +22,17 @@ const CourseDetails = () => {
     return <div>Curso no encontrado</div>;
   }
 
+  // Verificar si el curso ya está en el carrito
+  const isInCart = cart.find((c) => c.id === course.id);
+  // Verificar si el curso ya está adquirido
+  const isAcquired = acquiredCourses.find((c) => c.id === course.id);
+
   const handleAddToCart = () => {
-    // Implementa la lógica para agregar al carrito
+    addToCart(course);
+  };
+
+  const handleGiftCourse = () => {
+    // Implementa la lógica para regalar el curso
   };
 
   return (
@@ -35,12 +46,26 @@ const CourseDetails = () => {
           <p className="text-sm mb-2">Nivel: {course.level}</p>
           <p className="text-sm mb-2">Precio: ${course.price} USD</p>
           <p className="text-base mb-4">{course.description}</p>
-          <button
-            onClick={handleAddToCart}
-            className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition duration-300 text-white font-bold py-2 px-4 rounded"
-          >
-            Agregar al Carrito
-          </button>
+          {isAcquired ? (
+            <button
+              onClick={handleGiftCourse}
+              className="bg-blue-500 hover:bg-blue-600 transition duration-300 text-white font-bold py-2 px-4 rounded"
+            >
+              Regalar curso
+            </button>
+          ) : (
+            <button
+              onClick={handleAddToCart}
+              disabled={isInCart}
+              className={`${
+                isInCart
+                  ? 'bg-gray-400 cursor-not-allowed'
+                  : 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600'
+              } transition duration-300 text-white font-bold py-2 px-4 rounded`}
+            >
+              {isInCart ? 'Agregado al Carrito' : 'Agregar al Carrito'}
+            </button>
+          )}
         </div>
         {/* Imagen del curso */}
         <div className="md:w-1/2 mt-4 md:mt-0 md:ml-8">

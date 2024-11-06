@@ -1,6 +1,6 @@
 // src/components/Profile.jsx
 
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { UserContext } from '../context/UserContext';
 
 const Profile = () => {
@@ -9,7 +9,22 @@ const Profile = () => {
   // Estados locales para manejar el modo edición
   const [isEditingGeneral, setIsEditingGeneral] = useState(false);
   const [isEditingPayment, setIsEditingPayment] = useState(false);
-  const [editedUser, setEditedUser] = useState(user);
+  const [editedUser, setEditedUser] = useState({});
+
+  useEffect(() => {
+    if (user) {
+      setEditedUser(user);
+    }
+  }, [user]);
+
+  // Si user es null, mostrar un mensaje o redirigir
+  if (!user) {
+    return (
+      <div className="container mx-auto px-4 py-16">
+        <p className="text-center">Por favor, inicia sesión para ver tu perfil.</p>
+      </div>
+    );
+  }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,7 +63,7 @@ const Profile = () => {
                 type="text"
                 id="name"
                 name="name"
-                value={editedUser.name}
+                value={editedUser.name || ''}
                 onChange={handleChange}
                 className="w-full p-2 border rounded"
               />
@@ -62,7 +77,7 @@ const Profile = () => {
                 type="text"
                 id="username"
                 name="username"
-                value={editedUser.username}
+                value={editedUser.username || ''}
                 onChange={handleChange}
                 className="w-full p-2 border rounded"
               />
@@ -76,7 +91,7 @@ const Profile = () => {
                 type="email"
                 id="email"
                 name="email"
-                value={editedUser.email}
+                value={editedUser.email || ''}
                 onChange={handleChange}
                 className="w-full p-2 border rounded"
               />
@@ -90,7 +105,7 @@ const Profile = () => {
                 type="number"
                 id="age"
                 name="age"
-                value={editedUser.age}
+                value={editedUser.age || ''}
                 onChange={handleChange}
                 className="w-full p-2 border rounded"
               />
@@ -161,7 +176,7 @@ const Profile = () => {
                 type="text"
                 id="creditCard"
                 name="creditCard"
-                value={editedUser.creditCard}
+                value={editedUser.creditCard || ''}
                 onChange={handleChange}
                 className="w-full p-2 border rounded"
                 placeholder="Número de tarjeta"
@@ -176,7 +191,7 @@ const Profile = () => {
                 type="text"
                 id="expiryDate"
                 name="expiryDate"
-                value={editedUser.expiryDate}
+                value={editedUser.expiryDate || ''}
                 onChange={handleChange}
                 className="w-full p-2 border rounded"
                 placeholder="MM/AA"
@@ -191,7 +206,7 @@ const Profile = () => {
                 type="password"
                 id="cvv"
                 name="cvv"
-                value={editedUser.cvv}
+                value={editedUser.cvv || ''}
                 onChange={handleChange}
                 className="w-full p-2 border rounded"
                 placeholder="CVV"
