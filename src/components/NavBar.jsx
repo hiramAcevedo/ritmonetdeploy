@@ -1,7 +1,19 @@
 // src/components/NavBar.jsx
 
 import { Link } from 'react-router-dom';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useContext } from 'react';
+import { UserContext } from '../context/UserContext';
+
+// Importamos los íconos de Heroicons versión 2
+import {
+  Bars3Icon,
+  XMarkIcon,
+  ShoppingCartIcon,
+  UserCircleIcon,
+  SunIcon,
+  MoonIcon,
+  ChevronDownIcon,
+} from '@heroicons/react/24/outline';
 
 const NavBar = ({ darkMode, toggleDarkMode }) => {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
@@ -9,6 +21,9 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileCoursesOpen, setIsMobileCoursesOpen] = useState(false);
   const [isMobileAccountMenuOpen, setIsMobileAccountMenuOpen] = useState(false);
+
+  // Obtenemos el carrito del contexto para mostrar el número de artículos
+  const { cart } = useContext(UserContext);
 
   // Refs para detectar clics fuera de los menús de escritorio
   const coursesRef = useRef(null);
@@ -54,28 +69,11 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
             className="focus:outline-none"
           >
             {/* Icono de Menú Hamburguesa */}
-            <svg
-              className="w-6 h-6 text-gray-800 dark:text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              {isMobileMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
+            {isMobileMenuOpen ? (
+              <XMarkIcon className="w-6 h-6 text-gray-800 dark:text-white" />
+            ) : (
+              <Bars3Icon className="w-6 h-6 text-gray-800 dark:text-white" />
+            )}
           </button>
         </div>
 
@@ -98,9 +96,10 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
             onMouseEnter={() => setIsCoursesOpen(true)}
             onMouseLeave={() => setIsCoursesOpen(false)}
           >
-            <Link to="/courses" className="hover:underline focus:outline-none">
+            <button className="hover:underline focus:outline-none flex items-center">
               Cursos
-            </Link>
+              <ChevronDownIcon className="w-4 h-4 ml-1" />
+            </button>
             {isCoursesOpen && (
               <div className="absolute left-0 top-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
                 <ul>
@@ -137,9 +136,7 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
             onMouseLeave={() => setIsAccountMenuOpen(false)}
           >
             <button className="focus:outline-none">
-              <span role="img" aria-label="User">
-                👤
-              </span>
+              <UserCircleIcon className="w-6 h-6 text-gray-800 dark:text-white" />
             </button>
             {isAccountMenuOpen && (
               <div className="absolute right-0 top-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
@@ -155,14 +152,21 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
             )}
           </div>
 
-          <Link to="/cart" className="hover:underline">
-            <span role="img" aria-label="Cart">
-              🛒
-            </span>
+          <Link to="/cart" className="hover:underline relative">
+            <ShoppingCartIcon className="w-6 h-6 text-gray-800 dark:text-white" />
+            {cart && cart.length > 0 && (
+              <span className="absolute top-0 right-0 inline-flex items-center justify-center px-1 py-0.5 text-xs font-bold leading-none text-white bg-red-600 rounded-full">
+                {cart.length}
+              </span>
+            )}
           </Link>
 
           <button onClick={toggleDarkMode} className="p-2 rounded-full">
-            {darkMode ? '☀️' : '🌙'}
+            {darkMode ? (
+              <SunIcon className="w-6 h-6 text-yellow-500" />
+            ) : (
+              <MoonIcon className="w-6 h-6 text-gray-800 dark:text-white" />
+            )}
           </button>
         </div>
       </div>
@@ -200,21 +204,11 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
                   className="focus:outline-none"
                   aria-label="Toggle Courses Submenu"
                 >
-                  <svg
+                  <ChevronDownIcon
                     className={`w-4 h-4 transform ${
                       isMobileCoursesOpen ? 'rotate-180' : ''
                     }`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
+                  />
                 </button>
               </div>
               {isMobileCoursesOpen && (
@@ -271,21 +265,11 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
                 className="w-full text-left py-2 focus:outline-none hover:underline flex justify-between items-center"
               >
                 <span>Cuenta</span>
-                <svg
+                <ChevronDownIcon
                   className={`w-4 h-4 transform ${
                     isMobileAccountMenuOpen ? 'rotate-180' : ''
                   }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
+                />
               </button>
               {isMobileAccountMenuOpen && (
                 <div className="mt-2 ml-4">
@@ -321,10 +305,16 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
 
             <Link
               to="/cart"
-              className="block py-2 hover:underline"
+              className="block py-2 hover:underline flex items-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              🛒 Carrito
+              <ShoppingCartIcon className="w-6 h-6 mr-2" />
+              Carrito
+              {cart && cart.length > 0 && (
+                <span className="ml-2 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-600 rounded-full">
+                  {cart.length}
+                </span>
+              )}
             </Link>
 
             <button
@@ -334,7 +324,17 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
               }}
               className="w-full text-left py-2 focus:outline-none hover:underline flex items-center"
             >
-              {darkMode ? '☀️ Modo Claro' : '🌙 Modo Oscuro'}
+              {darkMode ? (
+                <>
+                  <SunIcon className="w-6 h-6 mr-2 text-yellow-500" />
+                  Modo Claro
+                </>
+              ) : (
+                <>
+                  <MoonIcon className="w-6 h-6 mr-2 text-gray-800 dark:text-white" />
+                  Modo Oscuro
+                </>
+              )}
             </button>
           </div>
         </div>

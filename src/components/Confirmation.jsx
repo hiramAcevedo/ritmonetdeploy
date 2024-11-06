@@ -15,17 +15,13 @@ const Confirmation = () => {
         Hemos enviado un correo de confirmación a tu dirección de email con los detalles de tu pedido.
       </p>
       <p className="mb-8">
-        Número de pedido: <strong>#123456789</strong>
-      </p>
-      <p className="mb-8">
-        Si tienes alguna pregunta, por favor contáctanos a través de nuestro{' '}
-        <Link to="/about-us#contact" className="text-blue-500 underline">Centro de Ayuda</Link>.
+        Ahora puedes acceder a tus cursos adquiridos.
       </p>
       <button
-        onClick={() => navigate('/')}
+        onClick={() => navigate('/acquired-courses')}
         className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition duration-300 text-white font-bold py-2 px-4 rounded"
       >
-        Volver al Inicio
+        Ir a Mis Cursos
       </button>
     </div>
   );
