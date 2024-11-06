@@ -17,9 +17,10 @@ import AcquiredCourses from './components/AcquiredCourses.jsx';
 import Cart from './components/Cart.jsx';
 import Confirmation from './components/Confirmation.jsx';
 import SubscriptionConfirmation from './components/SubscriptionConfirmation.jsx';
-import SubscribedCourseDetails from './components/SubscribedCourseDetails.jsx';
+import PurchasedCourseDetails from './components/PurchasedCourseDetails.jsx'; // Actualizado
 import TeacherDetails from './components/TeacherDetails.jsx';
 import Contact from './components/Contact.jsx';
+import PaymentForm from './components/PaymentForm.jsx'; // Importamos el nuevo componente
 
 import CourseSelection from './components/CourseSelection.jsx';
 import TeacherSelection from './components/TeacherSelection.jsx';
@@ -69,11 +70,12 @@ function App() {
                 element={<SubscriptionConfirmation />}
               />
               <Route
-                path="/subscribed-course"
-                element={<SubscribedCourseDetails />}
+                path="/purchased-course/:courseId"
+                element={<PurchasedCourseDetails />} // Actualizado
               />
               <Route path="/teachers/:id" element={<TeacherDetails />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/payment" element={<PaymentForm />} /> {/* Nueva ruta */}
             </Routes>
           </div>
           {/* Footer */}
