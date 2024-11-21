@@ -65,7 +65,7 @@ const Profile = () => {
                 name="name"
                 value={editedUser.name || ''}
                 onChange={handleChange}
-                className="w-full p-2 border rounded"
+                className="w-full p-2 border rounded bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
               />
             </div>
 
@@ -79,7 +79,7 @@ const Profile = () => {
                 name="username"
                 value={editedUser.username || ''}
                 onChange={handleChange}
-                className="w-full p-2 border rounded"
+                className="w-full p-2 border rounded bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
               />
             </div>
 
@@ -93,7 +93,7 @@ const Profile = () => {
                 name="email"
                 value={editedUser.email || ''}
                 onChange={handleChange}
-                className="w-full p-2 border rounded"
+                className="w-full p-2 border rounded bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
               />
             </div>
 
@@ -107,7 +107,7 @@ const Profile = () => {
                 name="age"
                 value={editedUser.age || ''}
                 onChange={handleChange}
-                className="w-full p-2 border rounded"
+                className="w-full p-2 border rounded bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
               />
             </div>
 
@@ -178,7 +178,7 @@ const Profile = () => {
                 name="creditCard"
                 value={editedUser.creditCard || ''}
                 onChange={handleChange}
-                className="w-full p-2 border rounded"
+                className="w-full p-2 border rounded bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
                 placeholder="Número de tarjeta"
               />
             </div>
@@ -193,7 +193,7 @@ const Profile = () => {
                 name="expiryDate"
                 value={editedUser.expiryDate || ''}
                 onChange={handleChange}
-                className="w-full p-2 border rounded"
+                className="w-full p-2 border rounded bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
                 placeholder="MM/AA"
               />
             </div>
@@ -208,7 +208,7 @@ const Profile = () => {
                 name="cvv"
                 value={editedUser.cvv || ''}
                 onChange={handleChange}
-                className="w-full p-2 border rounded"
+                className="w-full p-2 border rounded bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
                 placeholder="CVV"
               />
             </div>

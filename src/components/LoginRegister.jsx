@@ -22,7 +22,7 @@ const LoginRegister = () => {
           id="nombre"
           name="nombre"
           required
-          className="w-full mb-4 p-2 border rounded"
+          className="w-full mb-4 p-2 border rounded bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
         />
 
         <label htmlFor="username" className="block mb-2">
@@ -33,7 +33,7 @@ const LoginRegister = () => {
           id="username"
           name="username"
           required
-          className="w-full mb-4 p-2 border rounded"
+          className="w-full mb-4 p-2 border rounded bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
         />
 
         <label htmlFor="email" className="block mb-2">
@@ -44,7 +44,7 @@ const LoginRegister = () => {
           id="email"
           name="email"
           required
-          className="w-full mb-4 p-2 border rounded"
+          className="w-full mb-4 p-2 border rounded bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
         />
 
         <label htmlFor="contrasena" className="block mb-2">
@@ -55,7 +55,7 @@ const LoginRegister = () => {
           id="contrasena"
           name="contrasena"
           required
-          className="w-full mb-4 p-2 border rounded"
+          className="w-full mb-4 p-2 border rounded bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
         />
 
         <button

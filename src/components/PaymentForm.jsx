@@ -37,7 +37,7 @@ const PaymentForm = () => {
               type="text"
               value={cardNumber}
               onChange={(e) => setCardNumber(e.target.value)}
-              className="w-full px-3 py-2 border rounded-md focus:outline-none"
+              className="w-full px-3 py-2 border rounded-md focus:outline-none bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
               placeholder="XXXX XXXX XXXX XXXX"
               required
             />
@@ -48,7 +48,7 @@ const PaymentForm = () => {
               type="text"
               value={cardName}
               onChange={(e) => setCardName(e.target.value)}
-              className="w-full px-3 py-2 border rounded-md focus:outline-none"
+              className="w-full px-3 py-2 border rounded-md focus:outline-none bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
               placeholder="Como aparece en la tarjeta"
               required
             />
@@ -60,7 +60,7 @@ const PaymentForm = () => {
                 type="text"
                 value={expiryDate}
                 onChange={(e) => setExpiryDate(e.target.value)}
-                className="w-full px-3 py-2 border rounded-md focus:outline-none"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
                 placeholder="MM/AA"
                 required
               />
@@ -71,7 +71,7 @@ const PaymentForm = () => {
                 type="text"
                 value={cvc}
                 onChange={(e) => setCvc(e.target.value)}
-                className="w-full px-3 py-2 border rounded-md focus:outline-none"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none bg-white text-gray-900 dark:bg-gray-700 dark:text-white"
                 placeholder="CVC"
                 required
               />
