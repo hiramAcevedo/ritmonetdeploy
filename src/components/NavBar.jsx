@@ -79,13 +79,6 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
 
         {/* Centro y Derecha: Enlaces de Navegación */}
         <div className="hidden md:flex items-center space-x-4">
-          {/* Barra de Búsqueda */}
-          <input
-            type="text"
-            placeholder="Buscar..."
-            className="px-2 py-1 border rounded-md focus:outline-none"
-          />
-
           <Link to="/subscription" className="hover:underline">
             Clases
           </Link>
@@ -96,10 +89,13 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
             onMouseEnter={() => setIsCoursesOpen(true)}
             onMouseLeave={() => setIsCoursesOpen(false)}
           >
-            <button className="hover:underline focus:outline-none flex items-center">
+            <Link
+              to="/courses"
+              className="hover:underline focus:outline-none flex items-center"
+            >
               Cursos
               <ChevronDownIcon className="w-4 h-4 ml-1" />
-            </button>
+            </Link>
             {isCoursesOpen && (
               <div className="absolute left-0 top-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg z-50">
                 <ul>
@@ -175,13 +171,6 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
           <div className="p-4">
-            {/* Barra de Búsqueda */}
-            <input
-              type="text"
-              placeholder="Buscar..."
-              className="w-full px-2 py-1 border rounded-md focus:outline-none mb-4"
-            />
-
             <Link
               to="/subscription"
               className="block py-2 hover:underline"
