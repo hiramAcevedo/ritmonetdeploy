@@ -6,7 +6,7 @@
       "instructor": "Carlos Santana",
       "duration": "8 semanas",
       "level": "Intermedio",
-      "image": "/src/assets/img/PopularCourses/guitarra-electrica.jpg"
+      "image": "/assets/img/PopularCourses/guitarra-electrica.jpg"
     },
     {
       "id": 4,
@@ -15,7 +15,7 @@
       "instructor": "María González",
       "duration": "8 semanas",
       "level": "Principiante",
-      "image": "/src/assets/img/PopularCourses/introduccion-piano.jpg"
+      "image": "/assets/img/PopularCourses/introduccion-piano.jpg"
     },
     {
       "id": 7,
@@ -24,7 +24,7 @@
       "instructor": "Miguel Ángel",
       "duration": "6 semanas",
       "level": "Principiante",
-      "image": "https://images.pexels.com/photos/65717/pexels-photo-65717.jpeg"
+      "image": "/assets/img/PopularCourses/percusiones.jpg"
     },
     {
       "id": 11,
@@ -42,7 +42,7 @@
       "instructor": "Andrés Segovia",
       "duration": "12 semanas",
       "level": "Avanzado",
-      "image": "https://images.pexels.com/photos/164697/pexels-photo-164697.jpeg"
+      "image": "/assets/img/PopularCourses/guitarra-clasica.jpg"
     },
     {
       "id": 6,
@@ -51,6 +51,6 @@
       "instructor": "Ana López",
       "duration": "12 semanas",
       "level": "Avanzado",
-      "image": "https://images.pexels.com/photos/1293551/pexels-photo-1293551.jpeg"
+      "image": "/assets/img/PopularCourses/piano-avanzado.jpg"
     }
   ]

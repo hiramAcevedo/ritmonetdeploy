@@ -6,19 +6,19 @@ import { slugify } from '../utils/slugify';
 const instruments = [
   {
     name: 'Guitarra',
-    image: '/src/assets/img/CoursesHome/free-photo-of-madera-arboles-hierba-cesped.jpg',
+    image: '/assets/img/CoursesHome/free-photo-of-madera-arboles-hierba-cesped.jpg',
   },
   {
     name: 'Piano',
-    image: '/src/assets/img/CoursesHome/pexels-photo-9646751.jpg',
+    image: '/assets/img/CoursesHome/pexels-photo-9646751.jpg',
   },
   {
     name: 'Batería',
-    image: '/src/assets/img/CoursesHome/pexels-photo-11776933.jpg',
+    image: '/assets/img/CoursesHome/pexels-photo-11776933.jpg',
   },
   {
     name: 'Técnica Vocal',
-    image: '/src/assets/img/CoursesHome/pexels-photo-9001968.jpg',
+    image: '/assets/img/CoursesHome/pexels-photo-9001968.jpg',
   },
 ];
 
