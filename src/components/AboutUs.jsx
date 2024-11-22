@@ -27,7 +27,7 @@ const AboutUs = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <img
-            src="/src/assets/img/AboutUs/musica-arte.jpg"
+            src="/assets/img/AboutUs/musica-arte.jpg"
             alt="Enseñanza Musical"
             className="w-full h-80 object-cover rounded-lg"
           />
@@ -47,7 +47,7 @@ const AboutUs = () => {
             </p>
           </div>
           <img
-            src="/src/assets/img/AboutUs/pexels-photo-2479312.jpg"
+            src="/assets/img/AboutUs/pexels-photo-2479312.jpg"
             alt="Accesibilidad"
             className="w-full h-100 object-cover rounded-lg"
           />
@@ -59,7 +59,7 @@ const AboutUs = () => {
             Aprende a tocar, domina tu pasión. ¡Atrévete a ritmar con nosotros!
           </p>
           <img
-            src="/src/assets/img/AboutUs/Diseño-sin-título-3.png"
+            src="/assets/img/AboutUs/Diseño-sin-título-3.png"
             alt="Únete a Nosotros"
             className="w-full h-80 object-cover rounded-lg"
           />

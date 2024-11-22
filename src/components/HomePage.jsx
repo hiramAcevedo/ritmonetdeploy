@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div>
       <Hero
-        backgroundImage="/pexels-photo-164821.jpg"
+        backgroundImage="/assets/img/HomePage/pexels-photo-164821.jpeg"
         title="Aprende Música en Línea"
         subtitle="Domina tu instrumento favorito desde cualquier lugar del mundo"
         buttonText="Comenzar"
