@@ -8,7 +8,7 @@ const AboutUs = () => {
       {/* Hero Section */}
       <div className="relative">
         <img
-          src="/src/assets/img/AboutUs/musica-clasica.jpg"
+          src="/assets/img/AboutUs/musica-clasica.jpg"
           alt="Música"
           className="w-full h-96 object-cover"
         />
