@@ -8,7 +8,7 @@ const AboutUs = () => {
       {/* Hero Section */}
       <div className="relative">
         <img
-          src="https://www.orquestafilarmonia.com/wp-content/uploads/2023/12/musica-clasica.png"
+          src="/src/assets/img/AboutUs/musica-clasica.jpg"
           alt="Música"
           className="w-full h-96 object-cover"
         />
@@ -27,7 +27,7 @@ const AboutUs = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <img
-            src="https://www.nus.agency/wp-content/uploads/elementor/thumbs/musica-arte-scaled-q3s9zjmsgnvmn73optv6vm808qaju2jakn089uojbg.jpg"
+            src="/src/assets/img/AboutUs/musica-arte.jpg"
             alt="Enseñanza Musical"
             className="w-full h-80 object-cover rounded-lg"
           />
@@ -47,7 +47,7 @@ const AboutUs = () => {
             </p>
           </div>
           <img
-            src="https://images.pexels.com/photos/2479312/pexels-photo-2479312.jpeg"
+            src="/src/assets/img/AboutUs/pexels-photo-2479312.jpg"
             alt="Accesibilidad"
             className="w-full h-100 object-cover rounded-lg"
           />
@@ -59,7 +59,7 @@ const AboutUs = () => {
             Aprende a tocar, domina tu pasión. ¡Atrévete a ritmar con nosotros!
           </p>
           <img
-            src="https://holatelcel.com/wp-content/uploads/2023/12/Disen%CC%83o-sin-ti%CC%81tulo-3.png"
+            src="/src/assets/img/AboutUs/Diseño-sin-título-3.png"
             alt="Únete a Nosotros"
             className="w-full h-80 object-cover rounded-lg"
           />

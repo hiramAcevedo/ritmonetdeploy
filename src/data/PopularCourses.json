@@ -6,7 +6,7 @@
       "instructor": "Carlos Santana",
       "duration": "8 semanas",
       "level": "Intermedio",
-      "image": "https://images.pexels.com/photos/165971/pexels-photo-165971.jpeg"
+      "image": "/src/assets/img/PopularCourses/guitarra-electrica.jpg"
     },
     {
       "id": 4,
@@ -15,7 +15,7 @@
       "instructor": "María González",
       "duration": "8 semanas",
       "level": "Principiante",
-      "image": "https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg"
+      "image": "/src/assets/img/PopularCourses/introduccion-piano.jpg"
     },
     {
       "id": 7,

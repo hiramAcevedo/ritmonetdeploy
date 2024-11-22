@@ -8,7 +8,7 @@
     "level": "Intermedio",
     "price": 120,
     "description": "Domina la guitarra eléctrica con técnicas avanzadas y estilos modernos.",
-    "image": "https://images.pexels.com/photos/165971/pexels-photo-165971.jpeg",
+    "image": "/src/assets/img/PopularCourses/guitarra-electrica.jpg",
     "units": [
       {
         "title": "Unidad 1: Fundamentos de la Guitarra Eléctrica",
@@ -95,7 +95,7 @@
     "level": "Principiante",
     "price": 110,
     "description": "Aprende los conceptos básicos del piano y comienza a tocar melodías sencillas.",
-    "image": "https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg",
+    "image": "/src/assets/img/PopularCourses/guitarra-electrica.jpg",
     "units": [
       {
         "title": "Unidad 1: Conociendo el Piano",
